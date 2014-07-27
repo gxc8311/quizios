@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B9788D85-E731-4C72-9442-0319718D97A6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Answer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>784B5035-5027-47E5-AD76-1D798591FEB4</key>
+		<string>https://github.com/gxc8311/quizios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Answer/Answer.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>784B5035-5027-47E5-AD76-1D798591FEB4</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gxc8311/quizios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>784B5035-5027-47E5-AD76-1D798591FEB4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>784B5035-5027-47E5-AD76-1D798591FEB4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>quizios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
