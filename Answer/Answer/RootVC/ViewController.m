@@ -6,12 +6,12 @@
 //  Copyright (c) 2014 Liuxiaoguang. All rights reserved.
 //
 
-#import "LXGViewController.h"
+#import "ViewController.h"
 #import "UIView+Label.h"
-#import "LXGLoginCustionBtn.h"
-#import "LXGRegistViewController.h"
-#import "LXGLoginViewController.h"
-#import "LXGMatchViewController.h"
+#import "LoginCustionBtn.h"
+#import "RegistViewController.h"
+#import "LoginViewController.h"
+#import "MatchViewController.h"
 
 #define LOGO_Y      50
 #define BGVIEW_X    15
@@ -23,11 +23,11 @@
 #define REGIST_TAG  100
 #define LOGIN_TAG   101
 
-@interface LXGViewController ()
+@interface ViewController ()
 
 @end
 
-@implementation LXGViewController
+@implementation ViewController
 
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -66,7 +66,7 @@
                                              fontsize:BOTTOM_FONT
                                                  text:BOTTOM_TEXT];
     
-    LXGLoginCustionBtn *signupBtn = [LXGLoginCustionBtn buttonWithType:UIButtonTypeRoundedRect];
+    LoginCustionBtn *signupBtn = [LoginCustionBtn buttonWithType:UIButtonTypeRoundedRect];
     signupBtn.frame = CGRectMake(BGVIEW_X, bottomLabel.bottom + 40, kScreenWidth - 2 * BGVIEW_X, BTN_HEIGHT);
     [signupBtn setTitle:@"Sign Up With Email" forState:UIControlStateNormal];
     signupBtn.titleLabel.font = [UIFont boldSystemFontOfSize:TOP_FONT];
@@ -74,7 +74,7 @@
     [signupBtn setTag:REGIST_TAG];
     [self.view addSubview:signupBtn];
     
-    LXGLoginCustionBtn *loginBtn = [LXGLoginCustionBtn buttonWithType:UIButtonTypeRoundedRect];
+    LoginCustionBtn *loginBtn = [LoginCustionBtn buttonWithType:UIButtonTypeRoundedRect];
     loginBtn.frame = CGRectMake(BGVIEW_X, signupBtn.bottom + 20, kScreenWidth - 2 * BGVIEW_X, BTN_HEIGHT);
     loginBtn.titleLabel.font = [UIFont boldSystemFontOfSize:TOP_FONT];
     [loginBtn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
@@ -92,7 +92,7 @@
     switch (btn.tag) {
         case REGIST_TAG:
         {
-            LXGRegistViewController *regVC = [[LXGRegistViewController alloc] initWithNibName:nil
+            RegistViewController *regVC = [[RegistViewController alloc] initWithNibName:nil
                                                                                        bundle:nil];
             [self.navigationController pushViewController:regVC animated:YES];
         }
@@ -100,7 +100,7 @@
         case LOGIN_TAG:
         {
             
-            LXGLoginViewController *regVC = [[LXGLoginViewController alloc] initWithNibName:nil
+            LoginViewController *regVC = [[LoginViewController alloc] initWithNibName:nil
                                                                                        bundle:nil];
             [self.navigationController pushViewController:regVC animated:YES];
         }

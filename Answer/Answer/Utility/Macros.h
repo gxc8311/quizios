@@ -1,5 +1,5 @@
 //
-//  LXGMacros.h
+//  Macros.h
 //  Answer
 //
 //  Created by YuJie on 7/21/14.

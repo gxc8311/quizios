@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 Liuxiaoguang. All rights reserved.
 //
 
-#import "LXGSelectViewController.h"
-#import "LXGMatchViewController.h"
-#import "LXGPKViewController.h"
+#import "SelectViewController.h"
+#import "MatchViewController.h"
+#import "PKViewController.h"
 
-@interface LXGSelectViewController ()
+@interface SelectViewController ()
 
 - (IBAction)enterGame;
 
 @end
 
-@implementation LXGSelectViewController
+@implementation SelectViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,7 +43,7 @@
 
 - (IBAction)enterGame
 {
-    LXGMatchViewController *regVC = [[LXGMatchViewController alloc] initWithNibName:nil
+    MatchViewController *regVC = [[MatchViewController alloc] initWithNibName:nil
                                                                              bundle:nil];
     
     __weak typeof(self) mySelf = self;
@@ -58,7 +58,7 @@
 - (void)startGame
 {
     [self.navigationController setNavigationBarHidden:YES];
-    LXGPKViewController *regVC = [[LXGPKViewController alloc] initWithNibName:nil
+    PKViewController *regVC = [[PKViewController alloc] initWithNibName:nil
                                                                        bundle:nil];
     [self.navigationController pushViewController:regVC animated:YES];
 }

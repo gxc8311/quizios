@@ -1,37 +1,37 @@
 //
-//  LXGLoginViewController.m
+//  LXGRegistViewController.m
 //  Answer
 //
 //  Created by YuJie on 7/21/14.
 //  Copyright (c) 2014 Liuxiaoguang. All rights reserved.
 //
 
-#import "LXGLoginViewController.h"
-#import "LXGMatchViewController.h"
-#import "LXGSelectViewController.h"
+#import "RegistViewController.h"
+#import "MatchViewController.h"
 
-@interface LXGLoginViewController ()
+@interface RegistViewController ()
 
 @property (nonatomic, retain) IBOutlet UILabel *tipLabel;
 
+@property (nonatomic, retain) IBOutlet UILabel *oneFlag;
 @property (nonatomic, retain) IBOutlet UILabel *twoFlag;
 @property (nonatomic, retain) IBOutlet UILabel *threeFlag;
 
+@property (nonatomic, retain) IBOutlet UITextField *nameTF;
 @property (nonatomic, retain) IBOutlet UITextField *emailTF;
 @property (nonatomic, retain) IBOutlet UITextField *passwordTF;
 
-- (IBAction)forgotPassword:(id)sender;
 - (IBAction)clearKeyboard:(id)sender;
 
 @end
 
-@implementation LXGLoginViewController
+@implementation RegistViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"Login";
+        self.title = @"Regist";
         // Custom initialization
     }
     return self;
@@ -60,18 +60,21 @@
 - (void)doneClick
 {
     if ([self checkContexts]) {
-        
-        
-        LXGSelectViewController *regVC = [[LXGSelectViewController alloc] initWithNibName:nil
+        MatchViewController *regVC = [[MatchViewController alloc] initWithNibName:nil
                                                                                  bundle:nil];
         [self.navigationController pushViewController:regVC animated:YES];
-    
     }
 }
 
 - (BOOL)checkContexts
 {
     BOOL flag = false;
+    
+    if ([self.nameTF.text length] == 0){
+        flag = true;
+        self.oneFlag.textColor = [UIColor redColor];
+    }else
+        self.oneFlag.textColor = [UIColor greenColor];
     
     if ([self.emailTF.text length] == 0){
         flag = true;
@@ -93,13 +96,9 @@
     return true;
 }
 
-- (IBAction)forgotPassword:(id)sender
-{
-    [self.tipLabel setText:@"Function is not implemented！"];
-}
-
 - (IBAction)clearKeyboard:(id)sender
 {
+    [self.nameTF resignFirstResponder];
     [self.emailTF resignFirstResponder];
     [self.passwordTF resignFirstResponder];
 }

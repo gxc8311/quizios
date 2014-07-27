@@ -1,5 +1,5 @@
 //
-//  LXGLoginCustionBtn.h
+//  LXGLoginViewController.h
 //  Answer
 //
 //  Created by YuJie on 7/21/14.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LXGLoginCustionBtn : UIButton
+@interface LoginViewController : UIViewController
+
+
 
 @end

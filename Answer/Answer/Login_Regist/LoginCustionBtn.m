@@ -6,15 +6,15 @@
 //  Copyright (c) 2014 Liuxiaoguang. All rights reserved.
 //
 
-#import "LXGLoginCustionBtn.h"
+#import "LoginCustionBtn.h"
 
 
 
-@interface LXGLoginCustionBtn ()
+@interface LoginCustionBtn ()
 
 @end
 
-@implementation LXGLoginCustionBtn
+@implementation LoginCustionBtn
 
 - (id)initWithFrame:(CGRect)frame
 {

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LXGQuestionOne : UIView
+@interface QuestionOne : UIView
 
 - (void)layoutView;
 

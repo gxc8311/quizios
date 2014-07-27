@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		274E8C8D1984A79D00A1095A /* LXGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8C8C1984A79D00A1095A /* LXGViewController.m */; };
-		274E8C961984A7F400A1095A /* LXGLoginCustionBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8C8F1984A7F400A1095A /* LXGLoginCustionBtn.m */; };
-		274E8C971984A7F400A1095A /* LXGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8C911984A7F400A1095A /* LXGLoginViewController.m */; };
-		274E8C981984A7F400A1095A /* LXGLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 274E8C921984A7F400A1095A /* LXGLoginViewController.xib */; };
-		274E8C991984A7F400A1095A /* LXGRegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8C941984A7F400A1095A /* LXGRegistViewController.m */; };
-		274E8C9A1984A7F400A1095A /* LXGRegistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 274E8C951984A7F400A1095A /* LXGRegistViewController.xib */; };
-		274E8C9E1984A82400A1095A /* LXGSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8C9C1984A82400A1095A /* LXGSelectViewController.m */; };
-		274E8C9F1984A82400A1095A /* LXGSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 274E8C9D1984A82400A1095A /* LXGSelectViewController.xib */; };
-		274E8CA41984A84000A1095A /* LXGCandidateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8CA11984A84000A1095A /* LXGCandidateView.m */; };
-		274E8CA51984A84000A1095A /* LXGMatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8CA31984A84000A1095A /* LXGMatchViewController.m */; };
-		274E8CAC1984A87700A1095A /* LXGPKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8CA71984A87700A1095A /* LXGPKViewController.m */; };
-		274E8CAD1984A87700A1095A /* LXGPKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 274E8CA81984A87700A1095A /* LXGPKViewController.xib */; };
-		274E8CAE1984A87700A1095A /* LXGQuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8CAA1984A87700A1095A /* LXGQuestionView.m */; };
-		274E8CAF1984A87700A1095A /* LXGQuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 274E8CAB1984A87700A1095A /* LXGQuestionView.xib */; };
+		274E8C8D1984A79D00A1095A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8C8C1984A79D00A1095A /* ViewController.m */; };
+		274E8C961984A7F400A1095A /* LoginCustionBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8C8F1984A7F400A1095A /* LoginCustionBtn.m */; };
+		274E8C971984A7F400A1095A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8C911984A7F400A1095A /* LoginViewController.m */; };
+		274E8C981984A7F400A1095A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 274E8C921984A7F400A1095A /* LoginViewController.xib */; };
+		274E8C991984A7F400A1095A /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8C941984A7F400A1095A /* RegistViewController.m */; };
+		274E8C9A1984A7F400A1095A /* RegistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 274E8C951984A7F400A1095A /* RegistViewController.xib */; };
+		274E8C9E1984A82400A1095A /* SelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8C9C1984A82400A1095A /* SelectViewController.m */; };
+		274E8C9F1984A82400A1095A /* SelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 274E8C9D1984A82400A1095A /* SelectViewController.xib */; };
+		274E8CA41984A84000A1095A /* CandidateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8CA11984A84000A1095A /* CandidateView.m */; };
+		274E8CA51984A84000A1095A /* MatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8CA31984A84000A1095A /* MatchViewController.m */; };
+		274E8CAC1984A87700A1095A /* PKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8CA71984A87700A1095A /* PKViewController.m */; };
+		274E8CAD1984A87700A1095A /* PKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 274E8CA81984A87700A1095A /* PKViewController.xib */; };
+		274E8CAE1984A87700A1095A /* QuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8CAA1984A87700A1095A /* QuestionView.m */; };
+		274E8CAF1984A87700A1095A /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 274E8CAB1984A87700A1095A /* QuestionView.xib */; };
 		274E8CB61984A8D900A1095A /* AMProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8CB11984A8D900A1095A /* AMProgressView.m */; };
 		274E8CB71984A8D900A1095A /* AMProgressViewGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8CB31984A8D900A1095A /* AMProgressViewGradient.m */; };
 		274E8CB81984A8D900A1095A /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8CB51984A8D900A1095A /* UIViewExt.m */; };
-		274E8CBC1984A91A00A1095A /* LXGQuestionOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8CBA1984A91A00A1095A /* LXGQuestionOne.m */; };
-		274E8CBD1984A91A00A1095A /* LXGQuestionOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 274E8CBB1984A91A00A1095A /* LXGQuestionOne.xib */; };
+		274E8CBC1984A91A00A1095A /* QuestionOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8CBA1984A91A00A1095A /* QuestionOne.m */; };
+		274E8CBD1984A91A00A1095A /* QuestionOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 274E8CBB1984A91A00A1095A /* QuestionOne.xib */; };
 		E22E4F6E1983AF4800B94C57 /* UIAlertView+Tip.m in Sources */ = {isa = PBXBuildFile; fileRef = E22E4F6D1983AF4800B94C57 /* UIAlertView+Tip.m */; };
 		FA5E5BFE197DF59C008706F6 /* match_cancel_btn_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5E5BFD197DF59C008706F6 /* match_cancel_btn_normal@2x.png */; };
 		FAB1910D197CBB42005338B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB1910C197CBB42005338B8 /* Foundation.framework */; };
@@ -33,7 +33,7 @@
 		FAB19111197CBB42005338B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB19110197CBB42005338B8 /* UIKit.framework */; };
 		FAB19117197CBB42005338B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAB19115197CBB42005338B8 /* InfoPlist.strings */; };
 		FAB19119197CBB42005338B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB19118197CBB42005338B8 /* main.m */; };
-		FAB1911D197CBB42005338B8 /* LXGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1911C197CBB42005338B8 /* LXGAppDelegate.m */; };
+		FAB1911D197CBB42005338B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1911C197CBB42005338B8 /* AppDelegate.m */; };
 		FAB19120197CBB42005338B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB1911E197CBB42005338B8 /* Main.storyboard */; };
 		FAB19125197CBB42005338B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB19124197CBB42005338B8 /* Images.xcassets */; };
 		FAB1912C197CBB42005338B8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB1912B197CBB42005338B8 /* XCTest.framework */; };
@@ -90,38 +90,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		274E8C8B1984A79D00A1095A /* LXGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGViewController.h; sourceTree = "<group>"; };
-		274E8C8C1984A79D00A1095A /* LXGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGViewController.m; sourceTree = "<group>"; };
-		274E8C8E1984A7F400A1095A /* LXGLoginCustionBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGLoginCustionBtn.h; sourceTree = "<group>"; };
-		274E8C8F1984A7F400A1095A /* LXGLoginCustionBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGLoginCustionBtn.m; sourceTree = "<group>"; };
-		274E8C901984A7F400A1095A /* LXGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGLoginViewController.h; sourceTree = "<group>"; };
-		274E8C911984A7F400A1095A /* LXGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGLoginViewController.m; sourceTree = "<group>"; };
-		274E8C921984A7F400A1095A /* LXGLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXGLoginViewController.xib; sourceTree = "<group>"; };
-		274E8C931984A7F400A1095A /* LXGRegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGRegistViewController.h; sourceTree = "<group>"; };
-		274E8C941984A7F400A1095A /* LXGRegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGRegistViewController.m; sourceTree = "<group>"; };
-		274E8C951984A7F400A1095A /* LXGRegistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXGRegistViewController.xib; sourceTree = "<group>"; };
-		274E8C9B1984A82400A1095A /* LXGSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGSelectViewController.h; sourceTree = "<group>"; };
-		274E8C9C1984A82400A1095A /* LXGSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGSelectViewController.m; sourceTree = "<group>"; };
-		274E8C9D1984A82400A1095A /* LXGSelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXGSelectViewController.xib; sourceTree = "<group>"; };
-		274E8CA01984A84000A1095A /* LXGCandidateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGCandidateView.h; sourceTree = "<group>"; };
-		274E8CA11984A84000A1095A /* LXGCandidateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGCandidateView.m; sourceTree = "<group>"; };
-		274E8CA21984A84000A1095A /* LXGMatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGMatchViewController.h; sourceTree = "<group>"; };
-		274E8CA31984A84000A1095A /* LXGMatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGMatchViewController.m; sourceTree = "<group>"; };
-		274E8CA61984A87700A1095A /* LXGPKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGPKViewController.h; sourceTree = "<group>"; };
-		274E8CA71984A87700A1095A /* LXGPKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGPKViewController.m; sourceTree = "<group>"; };
-		274E8CA81984A87700A1095A /* LXGPKViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXGPKViewController.xib; sourceTree = "<group>"; };
-		274E8CA91984A87700A1095A /* LXGQuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGQuestionView.h; sourceTree = "<group>"; };
-		274E8CAA1984A87700A1095A /* LXGQuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGQuestionView.m; sourceTree = "<group>"; };
-		274E8CAB1984A87700A1095A /* LXGQuestionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXGQuestionView.xib; sourceTree = "<group>"; };
+		274E8C8B1984A79D00A1095A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		274E8C8C1984A79D00A1095A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		274E8C8E1984A7F400A1095A /* LoginCustionBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginCustionBtn.h; sourceTree = "<group>"; };
+		274E8C8F1984A7F400A1095A /* LoginCustionBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginCustionBtn.m; sourceTree = "<group>"; };
+		274E8C901984A7F400A1095A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		274E8C911984A7F400A1095A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		274E8C921984A7F400A1095A /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		274E8C931984A7F400A1095A /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
+		274E8C941984A7F400A1095A /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
+		274E8C951984A7F400A1095A /* RegistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistViewController.xib; sourceTree = "<group>"; };
+		274E8C9B1984A82400A1095A /* SelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectViewController.h; sourceTree = "<group>"; };
+		274E8C9C1984A82400A1095A /* SelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectViewController.m; sourceTree = "<group>"; };
+		274E8C9D1984A82400A1095A /* SelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectViewController.xib; sourceTree = "<group>"; };
+		274E8CA01984A84000A1095A /* CandidateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateView.h; sourceTree = "<group>"; };
+		274E8CA11984A84000A1095A /* CandidateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateView.m; sourceTree = "<group>"; };
+		274E8CA21984A84000A1095A /* MatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchViewController.h; sourceTree = "<group>"; };
+		274E8CA31984A84000A1095A /* MatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchViewController.m; sourceTree = "<group>"; };
+		274E8CA61984A87700A1095A /* PKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKViewController.h; sourceTree = "<group>"; };
+		274E8CA71984A87700A1095A /* PKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKViewController.m; sourceTree = "<group>"; };
+		274E8CA81984A87700A1095A /* PKViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKViewController.xib; sourceTree = "<group>"; };
+		274E8CA91984A87700A1095A /* QuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionView.h; sourceTree = "<group>"; };
+		274E8CAA1984A87700A1095A /* QuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionView.m; sourceTree = "<group>"; };
+		274E8CAB1984A87700A1095A /* QuestionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionView.xib; sourceTree = "<group>"; };
 		274E8CB01984A8D900A1095A /* AMProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMProgressView.h; sourceTree = "<group>"; };
 		274E8CB11984A8D900A1095A /* AMProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMProgressView.m; sourceTree = "<group>"; };
 		274E8CB21984A8D900A1095A /* AMProgressViewGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMProgressViewGradient.h; sourceTree = "<group>"; };
 		274E8CB31984A8D900A1095A /* AMProgressViewGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMProgressViewGradient.m; sourceTree = "<group>"; };
 		274E8CB41984A8D900A1095A /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
 		274E8CB51984A8D900A1095A /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
-		274E8CB91984A91A00A1095A /* LXGQuestionOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGQuestionOne.h; sourceTree = "<group>"; };
-		274E8CBA1984A91A00A1095A /* LXGQuestionOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGQuestionOne.m; sourceTree = "<group>"; };
-		274E8CBB1984A91A00A1095A /* LXGQuestionOne.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXGQuestionOne.xib; sourceTree = "<group>"; };
+		274E8CB91984A91A00A1095A /* QuestionOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionOne.h; sourceTree = "<group>"; };
+		274E8CBA1984A91A00A1095A /* QuestionOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionOne.m; sourceTree = "<group>"; };
+		274E8CBB1984A91A00A1095A /* QuestionOne.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionOne.xib; sourceTree = "<group>"; };
 		E22E4F6C1983AF4800B94C57 /* UIAlertView+Tip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Tip.h"; sourceTree = "<group>"; };
 		E22E4F6D1983AF4800B94C57 /* UIAlertView+Tip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Tip.m"; sourceTree = "<group>"; };
 		FA5E5BFD197DF59C008706F6 /* match_cancel_btn_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "match_cancel_btn_normal@2x.png"; sourceTree = "<group>"; };
@@ -133,8 +133,8 @@
 		FAB19116197CBB42005338B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAB19118197CBB42005338B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAB1911A197CBB42005338B8 /* Answer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Answer-Prefix.pch"; sourceTree = "<group>"; };
-		FAB1911B197CBB42005338B8 /* LXGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXGAppDelegate.h; sourceTree = "<group>"; };
-		FAB1911C197CBB42005338B8 /* LXGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXGAppDelegate.m; sourceTree = "<group>"; };
+		FAB1911B197CBB42005338B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FAB1911C197CBB42005338B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FAB1911F197CBB42005338B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAB19124197CBB42005338B8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FAB1912A197CBB42005338B8 /* AnswerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnswerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,7 +143,7 @@
 		FAB19135197CBB42005338B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAB19137197CBB42005338B8 /* AnswerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnswerTests.m; sourceTree = "<group>"; };
 		FAB19142197CBC2C005338B8 /* logo-login-scene-480@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-login-scene-480@2x.png"; sourceTree = "<group>"; };
-		FAB19146197CBCBB005338B8 /* LXGMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGMacros.h; sourceTree = "<group>"; };
+		FAB19146197CBCBB005338B8 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		FAB19150197CC18F005338B8 /* UIView+Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Label.h"; sourceTree = "<group>"; };
 		FAB19151197CC18F005338B8 /* UIView+Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Label.m"; sourceTree = "<group>"; };
 		FAB19166197CF904005338B8 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
@@ -207,14 +207,14 @@
 		E22E4F6619839D0100B94C57 /* Login_Regist */ = {
 			isa = PBXGroup;
 			children = (
-				274E8C8E1984A7F400A1095A /* LXGLoginCustionBtn.h */,
-				274E8C8F1984A7F400A1095A /* LXGLoginCustionBtn.m */,
-				274E8C901984A7F400A1095A /* LXGLoginViewController.h */,
-				274E8C911984A7F400A1095A /* LXGLoginViewController.m */,
-				274E8C921984A7F400A1095A /* LXGLoginViewController.xib */,
-				274E8C931984A7F400A1095A /* LXGRegistViewController.h */,
-				274E8C941984A7F400A1095A /* LXGRegistViewController.m */,
-				274E8C951984A7F400A1095A /* LXGRegistViewController.xib */,
+				274E8C8E1984A7F400A1095A /* LoginCustionBtn.h */,
+				274E8C8F1984A7F400A1095A /* LoginCustionBtn.m */,
+				274E8C901984A7F400A1095A /* LoginViewController.h */,
+				274E8C911984A7F400A1095A /* LoginViewController.m */,
+				274E8C921984A7F400A1095A /* LoginViewController.xib */,
+				274E8C931984A7F400A1095A /* RegistViewController.h */,
+				274E8C941984A7F400A1095A /* RegistViewController.m */,
+				274E8C951984A7F400A1095A /* RegistViewController.xib */,
 			);
 			path = Login_Regist;
 			sourceTree = "<group>";
@@ -222,8 +222,8 @@
 		E22E4F6819839D6E00B94C57 /* RootVC */ = {
 			isa = PBXGroup;
 			children = (
-				274E8C8B1984A79D00A1095A /* LXGViewController.h */,
-				274E8C8C1984A79D00A1095A /* LXGViewController.m */,
+				274E8C8B1984A79D00A1095A /* ViewController.h */,
+				274E8C8C1984A79D00A1095A /* ViewController.m */,
 			);
 			path = RootVC;
 			sourceTree = "<group>";
@@ -231,15 +231,15 @@
 		E22E4F6919839DAC00B94C57 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				274E8CB91984A91A00A1095A /* LXGQuestionOne.h */,
-				274E8CBA1984A91A00A1095A /* LXGQuestionOne.m */,
-				274E8CBB1984A91A00A1095A /* LXGQuestionOne.xib */,
-				274E8CA61984A87700A1095A /* LXGPKViewController.h */,
-				274E8CA71984A87700A1095A /* LXGPKViewController.m */,
-				274E8CA81984A87700A1095A /* LXGPKViewController.xib */,
-				274E8CA91984A87700A1095A /* LXGQuestionView.h */,
-				274E8CAA1984A87700A1095A /* LXGQuestionView.m */,
-				274E8CAB1984A87700A1095A /* LXGQuestionView.xib */,
+				274E8CB91984A91A00A1095A /* QuestionOne.h */,
+				274E8CBA1984A91A00A1095A /* QuestionOne.m */,
+				274E8CBB1984A91A00A1095A /* QuestionOne.xib */,
+				274E8CA61984A87700A1095A /* PKViewController.h */,
+				274E8CA71984A87700A1095A /* PKViewController.m */,
+				274E8CA81984A87700A1095A /* PKViewController.xib */,
+				274E8CA91984A87700A1095A /* QuestionView.h */,
+				274E8CAA1984A87700A1095A /* QuestionView.m */,
+				274E8CAB1984A87700A1095A /* QuestionView.xib */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -247,10 +247,10 @@
 		E22E4F6A19839E1100B94C57 /* Matching */ = {
 			isa = PBXGroup;
 			children = (
-				274E8CA01984A84000A1095A /* LXGCandidateView.h */,
-				274E8CA11984A84000A1095A /* LXGCandidateView.m */,
-				274E8CA21984A84000A1095A /* LXGMatchViewController.h */,
-				274E8CA31984A84000A1095A /* LXGMatchViewController.m */,
+				274E8CA01984A84000A1095A /* CandidateView.h */,
+				274E8CA11984A84000A1095A /* CandidateView.m */,
+				274E8CA21984A84000A1095A /* MatchViewController.h */,
+				274E8CA31984A84000A1095A /* MatchViewController.m */,
 			);
 			path = Matching;
 			sourceTree = "<group>";
@@ -258,9 +258,9 @@
 		E22E4F6B19839E7B00B94C57 /* PrepareGame */ = {
 			isa = PBXGroup;
 			children = (
-				274E8C9B1984A82400A1095A /* LXGSelectViewController.h */,
-				274E8C9C1984A82400A1095A /* LXGSelectViewController.m */,
-				274E8C9D1984A82400A1095A /* LXGSelectViewController.xib */,
+				274E8C9B1984A82400A1095A /* SelectViewController.h */,
+				274E8C9C1984A82400A1095A /* SelectViewController.m */,
+				274E8C9D1984A82400A1095A /* SelectViewController.xib */,
 			);
 			path = PrepareGame;
 			sourceTree = "<group>";
@@ -303,8 +303,8 @@
 				E22E4F6919839DAC00B94C57 /* Game */,
 				E22E4F6819839D6E00B94C57 /* RootVC */,
 				E22E4F6619839D0100B94C57 /* Login_Regist */,
-				FAB1911B197CBB42005338B8 /* LXGAppDelegate.h */,
-				FAB1911C197CBB42005338B8 /* LXGAppDelegate.m */,
+				FAB1911B197CBB42005338B8 /* AppDelegate.h */,
+				FAB1911C197CBB42005338B8 /* AppDelegate.m */,
 				FAB1911E197CBB42005338B8 /* Main.storyboard */,
 				FAB19124197CBB42005338B8 /* Images.xcassets */,
 				FAB1914F197CC138005338B8 /* Category */,
@@ -389,7 +389,7 @@
 		FAB19145197CBC6C005338B8 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				FAB19146197CBCBB005338B8 /* LXGMacros.h */,
+				FAB19146197CBCBB005338B8 /* Macros.h */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -501,11 +501,11 @@
 				FAB19183197CF954005338B8 /* Icon-Small-50@2x.png in Resources */,
 				FAB1917D197CF94B005338B8 /* Icon@2x.png in Resources */,
 				FAB19177197CF904005338B8 /* Icon-72@2x.png in Resources */,
-				274E8CBD1984A91A00A1095A /* LXGQuestionOne.xib in Resources */,
+				274E8CBD1984A91A00A1095A /* QuestionOne.xib in Resources */,
 				FA5E5BFE197DF59C008706F6 /* match_cancel_btn_normal@2x.png in Resources */,
 				FAB19170197CF904005338B8 /* Icon-29.png in Resources */,
-				274E8CAD1984A87700A1095A /* LXGPKViewController.xib in Resources */,
-				274E8C981984A7F400A1095A /* LXGLoginViewController.xib in Resources */,
+				274E8CAD1984A87700A1095A /* PKViewController.xib in Resources */,
+				274E8C981984A7F400A1095A /* LoginViewController.xib in Resources */,
 				FAB19178197CF904005338B8 /* Icon-76.png in Resources */,
 				FAB19125197CBB42005338B8 /* Images.xcassets in Resources */,
 				FAB19184197CF954005338B8 /* Icon-Small.png in Resources */,
@@ -514,12 +514,12 @@
 				FAB19188197CF95D005338B8 /* iTunesArtwork.png in Resources */,
 				FAB19117197CBB42005338B8 /* InfoPlist.strings in Resources */,
 				FAB19174197CF904005338B8 /* Icon-60.png in Resources */,
-				274E8CAF1984A87700A1095A /* LXGQuestionView.xib in Resources */,
+				274E8CAF1984A87700A1095A /* QuestionView.xib in Resources */,
 				FAB191B3197D1693005338B8 /* ninja-large@2x.png in Resources */,
 				FAB19171197CF904005338B8 /* Icon-29@2x.png in Resources */,
 				FAB191B0197D1693005338B8 /* dog-large@2x.png in Resources */,
 				FAB191B4197D1693005338B8 /* owl-large@2x.png in Resources */,
-				274E8C9A1984A7F400A1095A /* LXGRegistViewController.xib in Resources */,
+				274E8C9A1984A7F400A1095A /* RegistViewController.xib in Resources */,
 				FAB19143197CBC2C005338B8 /* logo-login-scene-480@2x.png in Resources */,
 				FAB191B6197D1693005338B8 /* pig-large@2x.png in Resources */,
 				FAB19120197CBB42005338B8 /* Main.storyboard in Resources */,
@@ -534,7 +534,7 @@
 				FAB19193197CF9A1005338B8 /* Default@2x.png in Resources */,
 				FAB191B1197D1693005338B8 /* ghost-large@2x.png in Resources */,
 				FAB1918F197CF9A1005338B8 /* Default-568h@2x.png in Resources */,
-				274E8C9F1984A82400A1095A /* LXGSelectViewController.xib in Resources */,
+				274E8C9F1984A82400A1095A /* SelectViewController.xib in Resources */,
 				FAB1919E197D0C5B005338B8 /* persons-random-preamble-1024@2x.png in Resources */,
 				FAB19185197CF954005338B8 /* Icon-Small@2x.png in Resources */,
 				FAB191B7197D1693005338B8 /* skull-large@2x.png in Resources */,
@@ -558,20 +558,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB19152197CC18F005338B8 /* UIView+Label.m in Sources */,
-				FAB1911D197CBB42005338B8 /* LXGAppDelegate.m in Sources */,
-				274E8C971984A7F400A1095A /* LXGLoginViewController.m in Sources */,
-				274E8CBC1984A91A00A1095A /* LXGQuestionOne.m in Sources */,
-				274E8CA41984A84000A1095A /* LXGCandidateView.m in Sources */,
+				FAB1911D197CBB42005338B8 /* AppDelegate.m in Sources */,
+				274E8C971984A7F400A1095A /* LoginViewController.m in Sources */,
+				274E8CBC1984A91A00A1095A /* QuestionOne.m in Sources */,
+				274E8CA41984A84000A1095A /* CandidateView.m in Sources */,
 				E22E4F6E1983AF4800B94C57 /* UIAlertView+Tip.m in Sources */,
-				274E8C961984A7F400A1095A /* LXGLoginCustionBtn.m in Sources */,
+				274E8C961984A7F400A1095A /* LoginCustionBtn.m in Sources */,
 				FAB19119197CBB42005338B8 /* main.m in Sources */,
 				274E8CB61984A8D900A1095A /* AMProgressView.m in Sources */,
-				274E8CAC1984A87700A1095A /* LXGPKViewController.m in Sources */,
-				274E8CAE1984A87700A1095A /* LXGQuestionView.m in Sources */,
-				274E8CA51984A84000A1095A /* LXGMatchViewController.m in Sources */,
-				274E8C8D1984A79D00A1095A /* LXGViewController.m in Sources */,
-				274E8C991984A7F400A1095A /* LXGRegistViewController.m in Sources */,
-				274E8C9E1984A82400A1095A /* LXGSelectViewController.m in Sources */,
+				274E8CAC1984A87700A1095A /* PKViewController.m in Sources */,
+				274E8CAE1984A87700A1095A /* QuestionView.m in Sources */,
+				274E8CA51984A84000A1095A /* MatchViewController.m in Sources */,
+				274E8C8D1984A79D00A1095A /* ViewController.m in Sources */,
+				274E8C991984A7F400A1095A /* RegistViewController.m in Sources */,
+				274E8C9E1984A82400A1095A /* SelectViewController.m in Sources */,
 				274E8CB71984A8D900A1095A /* AMProgressViewGradient.m in Sources */,
 				274E8CB81984A8D900A1095A /* UIViewExt.m in Sources */,
 			);

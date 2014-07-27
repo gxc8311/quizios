@@ -6,21 +6,21 @@
 //  Copyright (c) 2014 Liuxiaoguang. All rights reserved.
 //
 
-#import "LXGMatchViewController.h"
-#import "LXGCandidateView.h"
+#import "MatchViewController.h"
+#import "CandidateView.h"
 #import "UIViewExt.h"
 #import "UIView+Label.h"
 
 #define FONT_SIZE 14.f
 
-@interface LXGMatchViewController ()
+@interface MatchViewController ()
 {
-    LXGCandidateView *candidateView;
+    CandidateView *candidateView;
 }
 
 @end
 
-@implementation LXGMatchViewController
+@implementation MatchViewController
 
 - (void)dealloc
 {
@@ -43,7 +43,7 @@
     
     self.view.backgroundColor = [UIColor grayColor];
     
-    candidateView = [[LXGCandidateView alloc] initWithFrame:CGRectMake(0, kScreenHeight - 200, kScreenWidth, PEOPLE_HEIGHT)];
+    candidateView = [[CandidateView alloc] initWithFrame:CGRectMake(0, kScreenHeight - 200, kScreenWidth, PEOPLE_HEIGHT)];
     
     __weak typeof(self) safeSelf = self;
    

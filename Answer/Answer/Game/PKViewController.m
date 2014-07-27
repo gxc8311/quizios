@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Liuxiaoguang. All rights reserved.
 //
 
-#import "LXGPKViewController.h"
+#import "PKViewController.h"
 #import "AMProgressView.h"
-#import "LXGQuestionOne.h"
-#import "LXGQuestionView.h"
+#import "QuestionOne.h"
+#import "QuestionView.h"
 #import "UIAlertView+Tip.h"
 
 #define BORDER_WIDTH    3
@@ -18,7 +18,7 @@
 #define ANSWER_TAG      1000
 #define PAUSE_TIME      1
 
-@interface LXGPKViewController ()
+@interface PKViewController ()
 <
 UIAlertViewDelegate
 >
@@ -43,7 +43,7 @@ UIAlertViewDelegate
 
 @end
 
-@implementation LXGPKViewController
+@implementation PKViewController
 
 - (void)dealloc
 {
@@ -177,7 +177,7 @@ UIAlertViewDelegate
 
 - (void)layoutAnswerView:(NSDictionary *)dic
 {
-    LXGQuestionView *questView = (LXGQuestionView *)[self.view viewWithTag:ANSWER_TAG];
+    QuestionView *questView = (QuestionView *)[self.view viewWithTag:ANSWER_TAG];
     if (questView) {
         [questView initData:dic];
     }
@@ -232,7 +232,7 @@ UIAlertViewDelegate
 
 - (void)processSelectResult:(int)tag
 {
-    LXGQuestionView *questView = (LXGQuestionView *)[self.view viewWithTag:ANSWER_TAG];
+    QuestionView *questView = (QuestionView *)[self.view viewWithTag:ANSWER_TAG];
     if ([[[self.answerArray objectAtIndex:topicNum] objectForKey:@"index"] intValue] == tag - 100) {
         [questView changeBtnColor:true andTag:tag];
         answerCount++;
@@ -250,7 +250,7 @@ UIAlertViewDelegate
 
 - (void)goOnGame
 {
-    LXGQuestionView *questView = (LXGQuestionView *)[self.view viewWithTag:ANSWER_TAG];
+    QuestionView *questView = (QuestionView *)[self.view viewWithTag:ANSWER_TAG];
     if (questView) {
         [questView recoverView];
     }

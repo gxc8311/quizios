@@ -1,5 +1,5 @@
 //
-//  LXGPKViewController.h
+//  LXGSelectViewController.h
 //  Answer
 //
 //  Created by YuJie on 7/22/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LXGPKViewController : UIViewController
+@interface SelectViewController : UIViewController
 
 @end

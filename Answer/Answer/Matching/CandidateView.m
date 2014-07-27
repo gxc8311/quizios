@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Liuxiaoguang. All rights reserved.
 //
 
-#import "LXGCandidateView.h"
+#import "CandidateView.h"
 
 #define displacement    45
 #define MOVE_TIME       1.0f
 #define WAIT_TIME       0.3f
 
-@interface LXGCandidateView ()
+@interface CandidateView ()
 {
     NSArray     *namesArray;
     UIImageView *peopleView;
@@ -24,7 +24,7 @@
 
 @end
 
-@implementation LXGCandidateView
+@implementation CandidateView
 
 - (id)initWithFrame:(CGRect)frame
 {

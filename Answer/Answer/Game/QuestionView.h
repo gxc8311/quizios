@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LXGQuestionView : UIView
+@interface QuestionView : UIView
 
 @property (nonatomic, copy) void (^clickDelegate)(int tag);
 

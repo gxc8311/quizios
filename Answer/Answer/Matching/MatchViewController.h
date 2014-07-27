@@ -1,5 +1,5 @@
 //
-//  LXGAppDelegate.h
+//  LXGMatchViewController.h
 //  Answer
 //
 //  Created by YuJie on 7/21/14.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LXGAppDelegate : UIResponder <UIApplicationDelegate>
+@interface MatchViewController : UIViewController
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, copy)void (^matchDelegate)();
 
 @end

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LXGRegistViewController : UIViewController
+@interface RegistViewController : UIViewController
 
 
 

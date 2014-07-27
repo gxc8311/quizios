@@ -10,7 +10,7 @@
 
 #define PEOPLE_HEIGHT   100
 
-@interface LXGCandidateView : UIView
+@interface CandidateView : UIView
 
 @property (nonatomic, copy) void (^successDelegate)(void);
 

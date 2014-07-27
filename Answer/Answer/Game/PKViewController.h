@@ -1,13 +1,13 @@
 //
-//  LXGViewController.h
+//  LXGPKViewController.h
 //  Answer
 //
-//  Created by YuJie on 7/21/14.
+//  Created by YuJie on 7/22/14.
 //  Copyright (c) 2014 Liuxiaoguang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface LXGViewController : UIViewController
+@interface PKViewController : UIViewController
 
 @end

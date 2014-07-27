@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Liuxiaoguang. All rights reserved.
 //
 
-#import "LXGQuestionOne.h"
+#import "QuestionOne.h"
 
-@interface LXGQuestionOne ()
+@interface QuestionOne ()
 
 @property (nonatomic, retain) IBOutlet UILabel *questionLabel;
 
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation LXGQuestionOne
+@implementation QuestionOne
 
 - (void)layoutView
 {
