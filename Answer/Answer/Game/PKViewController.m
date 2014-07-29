@@ -1,5 +1,5 @@
 //
-//  LXGPKViewController.m
+//  PKViewController.m
 //  Answer
 //
 //  Created by YuJie on 7/22/14.
@@ -97,32 +97,8 @@ UIAlertViewDelegate
     [self ViewStrokes:self.rivalHead];
     [self ViewStrokes:self.countdownView];
     
-    mePro = [[AMProgressView alloc] initWithFrame:CGRectMake(10, kScreenHeight / 3, 10, kScreenHeight * 2 / 3 - 20)
-                                   andGradientColors:[NSArray arrayWithObjects:
-                                                      [UIColor colorWithRed:0.0f green:0.0f blue:0.3f alpha:0.50f],
-                                                      [UIColor colorWithRed:0.3f green:0.3f blue:0.6f alpha:0.75f],
-                                                      [UIColor colorWithRed:0.6f green:0.6f blue:0.9f alpha:1.00f], nil]
-                                    andOutsideBorder:NO
-                                         andVertical:YES];
-    mePro.emptyPartAlpha = 0.8f;
-    mePro.progress = 0.0;
-    mePro.layer.cornerRadius = mePro.frame.size.width / 2;
-    mePro.layer.masksToBounds = YES;
-    [self.view addSubview:mePro];
-    
-    rivalPro = [[AMProgressView alloc] initWithFrame:CGRectMake(300, kScreenHeight / 3, 10, kScreenHeight * 2 / 3 - 20)
-                                              andGradientColors:[NSArray arrayWithObjects:
-                                                                 [UIColor colorWithRed:0.0f green:0.0f blue:0.3f alpha:0.50f],
-                                                                 [UIColor colorWithRed:0.3f green:0.3f blue:0.6f alpha:0.75f],
-                                                                 [UIColor colorWithRed:0.6f green:0.6f blue:0.9f alpha:1.00f], nil]
-                                               andOutsideBorder:NO
-                                                    andVertical:YES];
-    rivalPro.emptyPartAlpha = 0.8f;
-    rivalPro.progress = 0.0;
-    rivalPro.layer.cornerRadius = mePro.frame.size.width / 2;
-    rivalPro.layer.masksToBounds = YES;
-    [self.view addSubview:rivalPro];
-    
+    mePro = [self createProgressWithFrame:CGRectMake(10, kScreenHeight / 3 + 10, 10, kScreenHeight * 2 / 3 - 30)];
+    rivalPro = [self createProgressWithFrame:CGRectMake(300, kScreenHeight / 3 + 10, 10, kScreenHeight * 2 / 3 - 30)];
     
     [self prepareAni];
 }
@@ -135,10 +111,10 @@ UIAlertViewDelegate
         [self invalidateTimer];
     }
     self.curTimer = [NSTimer scheduledTimerWithTimeInterval:1
-                                     target:self
-                                   selector:@selector(updateTimes)
-                                   userInfo:nil
-                                    repeats:YES];
+                                                     target:self
+                                                   selector:@selector(updateTimes)
+                                                   userInfo:nil
+                                                    repeats:YES];
 }
 
 - (void)updateTimes
@@ -185,9 +161,9 @@ UIAlertViewDelegate
     {
         __weak typeof(self) mySelf = self;
         
-        questView = [[[UINib nibWithNibName:@"LXGQuestionView" bundle:nil] instantiateWithOwner:nil options:nil] lastObject];
+        questView = [[[UINib nibWithNibName:@"QuestionView" bundle:nil] instantiateWithOwner:nil options:nil] lastObject];
         questView.clickDelegate = ^(int tag){
-        [mySelf processSelectResult:tag];
+            [mySelf processSelectResult:tag];
         };
         [questView layoutView];
         [questView initData:dic];
@@ -204,14 +180,14 @@ UIAlertViewDelegate
     void (^animationBlock)() = ^{
         mySelf.prepareView.alpha = 1;
     };
-
+    
     [UIView animateWithDuration:ALPHA_ANI_TIME
                      animations:animationBlock
                      completion:^(BOOL finish){
                          [mySelf performSelector:@selector(removePrepareView)
                                       withObject:nil
                                       afterDelay:1];
-    }];
+                     }];
 }
 
 - (void)removePrepareView
@@ -271,6 +247,24 @@ UIAlertViewDelegate
 {
     [self invalidateTimer];
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (AMProgressView *)createProgressWithFrame:(CGRect)frame
+{
+    AMProgressView *pro = [[AMProgressView alloc] initWithFrame:frame
+                                              andGradientColors:[NSArray arrayWithObjects:
+                                                                 [UIColor colorWithRed:0.0f green:0.0f blue:0.3f alpha:0.50f],
+                                                                 [UIColor colorWithRed:0.3f green:0.3f blue:0.6f alpha:0.75f],
+                                                                 [UIColor colorWithRed:0.6f green:0.6f blue:0.9f alpha:1.00f], nil]
+                                               andOutsideBorder:NO
+                                                    andVertical:YES];
+    pro.emptyPartAlpha = 0.8f;
+    pro.progress = 0.0;
+    pro.layer.cornerRadius = pro.frame.size.width / 2;
+    pro.layer.masksToBounds = YES;
+    [self.view addSubview:pro];
+    
+    return pro;
 }
 
 - (void)didReceiveMemoryWarning
