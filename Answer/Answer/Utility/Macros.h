@@ -15,8 +15,15 @@
 #define ASColor(R, G, B)        [UIColor colorWithRed:R / 255.0f green:G / 255.0f blue:B / 255.0f alpha:1]
 #define ASColorA(R, G, B, A)    [UIColor colorWithRed:R / 255.0f green:G / 255.0f blue:B / 255.0f alpha:A / 255.0f]
 
+#define VC_BG_COLOR ASColor(38, 38, 38)
+
+//系统信息
+#define SYSTEM_VERSION [[UIDevice currentDevice].systemVersion floatValue]
+#define IS_SYSTEM_VERSION_7_GREATER (SYSTEM_VERSION >= 7.0 ? YES : NO)
+
 //图片名字
-#define LOGO_ICON_NAME @"logo-login-scene-480@2x"
+#define LOGO_ICON_NAME @"login_icon@2x"
+#define LOGO_TITLE_NAME @"login_name@2x"
 #define CANDIDATE_NAME @"persons-random-preamble-1024@2x"
 #define MATCH_CANCEL_BTN @"match_cancel_btn_normal@2x"
 //匹配图片的名字

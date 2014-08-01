@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+enum{
+    m_UNKONW,
+    m_REGIST,
+    m_LOGIN
+};
+
 @interface LoginCustionBtn : UIButton
+
+- (void)updateBackgroundColor:(int)type;
 
 @end

@@ -91,7 +91,7 @@ UIAlertViewDelegate
 {
     [super viewDidLoad];
     
-    self.view.backgroundColor = ASColor(38, 38, 38);
+    self.view.backgroundColor = VC_BG_COLOR;
     
     [self ViewStrokes:self.meHead];
     [self ViewStrokes:self.rivalHead];

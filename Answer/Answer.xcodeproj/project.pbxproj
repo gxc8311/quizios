@@ -41,8 +41,6 @@
 		FAB1912E197CBB42005338B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB19110197CBB42005338B8 /* UIKit.framework */; };
 		FAB19136197CBB42005338B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAB19134197CBB42005338B8 /* InfoPlist.strings */; };
 		FAB19138197CBB42005338B8 /* AnswerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB19137197CBB42005338B8 /* AnswerTests.m */; };
-		FAB19143197CBC2C005338B8 /* logo-login-scene-480@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB19142197CBC2C005338B8 /* logo-login-scene-480@2x.png */; };
-		FAB19144197CBC2C005338B8 /* logo-login-scene-480@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB19142197CBC2C005338B8 /* logo-login-scene-480@2x.png */; };
 		FAB19152197CC18F005338B8 /* UIView+Label.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB19151197CC18F005338B8 /* UIView+Label.m */; };
 		FAB19153197CC18F005338B8 /* UIView+Label.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB19151197CC18F005338B8 /* UIView+Label.m */; };
 		FAB19170197CF904005338B8 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB19166197CF904005338B8 /* Icon-29.png */; };
@@ -77,6 +75,9 @@
 		FAB191B6197D1693005338B8 /* pig-large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB191AC197D1693005338B8 /* pig-large@2x.png */; };
 		FAB191B7197D1693005338B8 /* skull-large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB191AD197D1693005338B8 /* skull-large@2x.png */; };
 		FAB191B8197D1693005338B8 /* snake-large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB191AE197D1693005338B8 /* snake-large@2x.png */; };
+		FABB7769198B1EBF00FEF5A3 /* login_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FABB7766198B1EBF00FEF5A3 /* login_icon@2x.png */; };
+		FABB776A198B1EBF00FEF5A3 /* login_name@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FABB7767198B1EBF00FEF5A3 /* login_name@2x.png */; };
+		FABB776B198B1EBF00FEF5A3 /* reg_head@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FABB7768198B1EBF00FEF5A3 /* reg_head@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,7 +143,6 @@
 		FAB19133197CBB42005338B8 /* AnswerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnswerTests-Info.plist"; sourceTree = "<group>"; };
 		FAB19135197CBB42005338B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAB19137197CBB42005338B8 /* AnswerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnswerTests.m; sourceTree = "<group>"; };
-		FAB19142197CBC2C005338B8 /* logo-login-scene-480@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-login-scene-480@2x.png"; sourceTree = "<group>"; };
 		FAB19146197CBCBB005338B8 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		FAB19150197CC18F005338B8 /* UIView+Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Label.h"; sourceTree = "<group>"; };
 		FAB19151197CC18F005338B8 /* UIView+Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Label.m"; sourceTree = "<group>"; };
@@ -178,6 +178,9 @@
 		FAB191AC197D1693005338B8 /* pig-large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pig-large@2x.png"; sourceTree = "<group>"; };
 		FAB191AD197D1693005338B8 /* skull-large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skull-large@2x.png"; sourceTree = "<group>"; };
 		FAB191AE197D1693005338B8 /* snake-large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snake-large@2x.png"; sourceTree = "<group>"; };
+		FABB7766198B1EBF00FEF5A3 /* login_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_icon@2x.png"; sourceTree = "<group>"; };
+		FABB7767198B1EBF00FEF5A3 /* login_name@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_name@2x.png"; sourceTree = "<group>"; };
+		FABB7768198B1EBF00FEF5A3 /* reg_head@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reg_head@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,6 +372,9 @@
 		FAB19141197CBC09005338B8 /* IMAGE */ = {
 			isa = PBXGroup;
 			children = (
+				FABB7766198B1EBF00FEF5A3 /* login_icon@2x.png */,
+				FABB7767198B1EBF00FEF5A3 /* login_name@2x.png */,
+				FABB7768198B1EBF00FEF5A3 /* reg_head@2x.png */,
 				FA5E5BFD197DF59C008706F6 /* match_cancel_btn_normal@2x.png */,
 				FAB191A5197D1693005338B8 /* cat-large@2x.png */,
 				FAB191A6197D1693005338B8 /* dog-large@2x.png */,
@@ -381,7 +387,6 @@
 				FAB191AD197D1693005338B8 /* skull-large@2x.png */,
 				FAB191AE197D1693005338B8 /* snake-large@2x.png */,
 				FAB1919D197D0C5B005338B8 /* persons-random-preamble-1024@2x.png */,
-				FAB19142197CBC2C005338B8 /* logo-login-scene-480@2x.png */,
 			);
 			path = IMAGE;
 			sourceTree = "<group>";
@@ -498,6 +503,7 @@
 				FAB19182197CF954005338B8 /* Icon-Small-50.png in Resources */,
 				FAB191AF197D1693005338B8 /* cat-large@2x.png in Resources */,
 				FAB1917C197CF94B005338B8 /* Icon.png in Resources */,
+				FABB776B198B1EBF00FEF5A3 /* reg_head@2x.png in Resources */,
 				FAB19183197CF954005338B8 /* Icon-Small-50@2x.png in Resources */,
 				FAB1917D197CF94B005338B8 /* Icon@2x.png in Resources */,
 				FAB19177197CF904005338B8 /* Icon-72@2x.png in Resources */,
@@ -510,17 +516,18 @@
 				FAB19125197CBB42005338B8 /* Images.xcassets in Resources */,
 				FAB19184197CF954005338B8 /* Icon-Small.png in Resources */,
 				FAB191B2197D1693005338B8 /* gorilla-large@2x.png in Resources */,
+				FABB776A198B1EBF00FEF5A3 /* login_name@2x.png in Resources */,
 				FAB19192197CF9A1005338B8 /* Default.png in Resources */,
 				FAB19188197CF95D005338B8 /* iTunesArtwork.png in Resources */,
 				FAB19117197CBB42005338B8 /* InfoPlist.strings in Resources */,
 				FAB19174197CF904005338B8 /* Icon-60.png in Resources */,
+				FABB7769198B1EBF00FEF5A3 /* login_icon@2x.png in Resources */,
 				274E8CAF1984A87700A1095A /* QuestionView.xib in Resources */,
 				FAB191B3197D1693005338B8 /* ninja-large@2x.png in Resources */,
 				FAB19171197CF904005338B8 /* Icon-29@2x.png in Resources */,
 				FAB191B0197D1693005338B8 /* dog-large@2x.png in Resources */,
 				FAB191B4197D1693005338B8 /* owl-large@2x.png in Resources */,
 				274E8C9A1984A7F400A1095A /* RegistViewController.xib in Resources */,
-				FAB19143197CBC2C005338B8 /* logo-login-scene-480@2x.png in Resources */,
 				FAB191B6197D1693005338B8 /* pig-large@2x.png in Resources */,
 				FAB19120197CBB42005338B8 /* Main.storyboard in Resources */,
 				FAB191B5197D1693005338B8 /* panda-large@2x.png in Resources */,
@@ -545,7 +552,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB19144197CBC2C005338B8 /* logo-login-scene-480@2x.png in Resources */,
 				FAB19136197CBB42005338B8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

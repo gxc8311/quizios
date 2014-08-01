@@ -11,17 +11,13 @@
 
 @interface RegistViewController ()
 
-@property (nonatomic, retain) IBOutlet UILabel *tipLabel;
-
-@property (nonatomic, retain) IBOutlet UILabel *oneFlag;
-@property (nonatomic, retain) IBOutlet UILabel *twoFlag;
-@property (nonatomic, retain) IBOutlet UILabel *threeFlag;
-
+@property (nonatomic, retain) IBOutlet UIView *BgView;
 @property (nonatomic, retain) IBOutlet UITextField *nameTF;
 @property (nonatomic, retain) IBOutlet UITextField *emailTF;
 @property (nonatomic, retain) IBOutlet UITextField *passwordTF;
 
 - (IBAction)clearKeyboard:(id)sender;
+- (IBAction)chooseHeadAction:(id)sender;
 
 @end
 
@@ -31,7 +27,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"Regist";
+        self.title = @"注册";
         // Custom initialization
     }
     return self;
@@ -48,11 +44,17 @@
 {
     [super viewDidLoad];
     
+    self.view.backgroundColor = VC_BG_COLOR;
+    
+    self.BgView.layer.cornerRadius = 5;
+    
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
                                                                                target:self
                                                                                action:@selector(doneClick)];
     
     self.navigationItem.rightBarButtonItem = rightItem;
+    
+    [self.nameTF becomeFirstResponder];
     
     // Do any additional setup after loading the view from its nib.
 }
@@ -68,31 +70,6 @@
 
 - (BOOL)checkContexts
 {
-    BOOL flag = false;
-    
-    if ([self.nameTF.text length] == 0){
-        flag = true;
-        self.oneFlag.textColor = [UIColor redColor];
-    }else
-        self.oneFlag.textColor = [UIColor greenColor];
-    
-    if ([self.emailTF.text length] == 0){
-        flag = true;
-        self.twoFlag.textColor = [UIColor redColor];
-    }else
-        self.twoFlag.textColor = [UIColor greenColor];
-    
-    if ([self.passwordTF.text length] == 0){
-        flag = true;
-        self.threeFlag.textColor = [UIColor redColor];
-    }else
-        self.threeFlag.textColor = [UIColor greenColor];
-    
-    if (flag) {
-        [self.tipLabel setText:@"Input content cannot be empty"];
-        return false;
-    }
-    
     return true;
 }
 
@@ -101,6 +78,11 @@
     [self.nameTF resignFirstResponder];
     [self.emailTF resignFirstResponder];
     [self.passwordTF resignFirstResponder];
+}
+
+- (IBAction)chooseHeadAction:(id)sender
+{
+    
 }
 
 - (void)didReceiveMemoryWarning
