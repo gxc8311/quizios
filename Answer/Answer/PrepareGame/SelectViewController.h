@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface SelectViewController : UIViewController
+@interface SelectViewController : BaseViewController
 
 @end

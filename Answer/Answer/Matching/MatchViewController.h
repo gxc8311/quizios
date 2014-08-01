@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface MatchViewController : UIViewController
+@interface MatchViewController : BaseViewController
 
 @property (nonatomic, copy)void (^matchDelegate)();
 

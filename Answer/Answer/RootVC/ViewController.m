@@ -58,8 +58,6 @@
         [[UINavigationBar appearance] setBackgroundColor:[UIColor clearColor]];
     }
     
-    self.view.backgroundColor = VC_BG_COLOR;
-    
     UIImage *titleImg = [UIImage imageNamed:LOGO_TITLE_NAME];
     
     UIImageView  *titleView=[[UIImageView alloc] initWithFrame:CGRectMake((kScreenWidth - titleImg.size.width / 2.0) / 2.0,

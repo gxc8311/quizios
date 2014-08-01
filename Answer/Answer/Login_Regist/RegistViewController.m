@@ -44,7 +44,7 @@
 {
     [super viewDidLoad];
     
-    self.view.backgroundColor = VC_BG_COLOR;
+    
     
     self.BgView.layer.cornerRadius = 5;
     

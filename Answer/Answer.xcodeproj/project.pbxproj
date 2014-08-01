@@ -28,6 +28,7 @@
 		274E8CBD1984A91A00A1095A /* QuestionOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 274E8CBB1984A91A00A1095A /* QuestionOne.xib */; };
 		E22E4F6E1983AF4800B94C57 /* UIAlertView+Tip.m in Sources */ = {isa = PBXBuildFile; fileRef = E22E4F6D1983AF4800B94C57 /* UIAlertView+Tip.m */; };
 		FA5E5BFE197DF59C008706F6 /* match_cancel_btn_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5E5BFD197DF59C008706F6 /* match_cancel_btn_normal@2x.png */; };
+		FA65A5A1198B380A00CB48FC /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA65A5A0198B380A00CB48FC /* BaseViewController.m */; };
 		FAB1910D197CBB42005338B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB1910C197CBB42005338B8 /* Foundation.framework */; };
 		FAB1910F197CBB42005338B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB1910E197CBB42005338B8 /* CoreGraphics.framework */; };
 		FAB19111197CBB42005338B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB19110197CBB42005338B8 /* UIKit.framework */; };
@@ -126,6 +127,8 @@
 		E22E4F6C1983AF4800B94C57 /* UIAlertView+Tip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Tip.h"; sourceTree = "<group>"; };
 		E22E4F6D1983AF4800B94C57 /* UIAlertView+Tip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Tip.m"; sourceTree = "<group>"; };
 		FA5E5BFD197DF59C008706F6 /* match_cancel_btn_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "match_cancel_btn_normal@2x.png"; sourceTree = "<group>"; };
+		FA65A59F198B380A00CB48FC /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		FA65A5A0198B380A00CB48FC /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		FAB19109197CBB42005338B8 /* Answer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Answer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB1910C197CBB42005338B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAB1910E197CBB42005338B8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -268,6 +271,15 @@
 			path = PrepareGame;
 			sourceTree = "<group>";
 		};
+		FA65A59E198B37E500CB48FC /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				FA65A59F198B380A00CB48FC /* BaseViewController.h */,
+				FA65A5A0198B380A00CB48FC /* BaseViewController.m */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
 		FAB19100197CBB42005338B8 = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +313,7 @@
 		FAB19112197CBB42005338B8 /* Answer */ = {
 			isa = PBXGroup;
 			children = (
+				FA65A59E198B37E500CB48FC /* BaseVC */,
 				E22E4F6B19839E7B00B94C57 /* PrepareGame */,
 				E22E4F6A19839E1100B94C57 /* Matching */,
 				E22E4F6919839DAC00B94C57 /* Game */,
@@ -564,6 +577,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB19152197CC18F005338B8 /* UIView+Label.m in Sources */,
+				FA65A5A1198B380A00CB48FC /* BaseViewController.m in Sources */,
 				FAB1911D197CBB42005338B8 /* AppDelegate.m in Sources */,
 				274E8C971984A7F400A1095A /* LoginViewController.m in Sources */,
 				274E8CBC1984A91A00A1095A /* QuestionOne.m in Sources */,

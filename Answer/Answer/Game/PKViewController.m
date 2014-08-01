@@ -91,8 +91,6 @@ UIAlertViewDelegate
 {
     [super viewDidLoad];
     
-    self.view.backgroundColor = VC_BG_COLOR;
-    
     [self ViewStrokes:self.meHead];
     [self ViewStrokes:self.rivalHead];
     [self ViewStrokes:self.countdownView];
