@@ -72,7 +72,7 @@ UITableViewDelegate
     [self.view addSubview:self.m_tableView];
     
     self.navigationItem.leftBarButtonItem = [self setNavBtnWithName:SET_BTN selecter:@selector(leftNavBtnAction)];
-    self.navigationItem.rightBarButtonItem = [self setNavBtnWithName:SET_BTN selecter:@selector(rightNavBtnAction)];
+    self.navigationItem.rightBarButtonItem = [self setNavBtnWithName:EXCHANGE_BTN selecter:@selector(rightNavBtnAction)];
 }
 
 - (void)leftNavBtnAction

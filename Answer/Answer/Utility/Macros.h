@@ -45,8 +45,8 @@
 #define SNAKE_NAME      @"snake-large@2x"
 #define ARROW_TOP       @"home_open@2x"
 #define ARROW_BOTTOM    @"home_close@2x"
-#define EXCHANGE_BTN    @"home_rank@2x"
-#define SET_BTN         @"home_rank@2x"
+#define EXCHANGE_BTN    @"home_reward@2x"
+#define SET_BTN         @"home_menu@2x"
 
 #define RANK_IMAGE     @"home_rank@2x"
 #define START_IMAGE     @"home_begin@2x"
