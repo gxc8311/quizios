@@ -14,6 +14,7 @@
 #import "SelectViewController.h"
 #import "BaseNavigationController.h"
 #import "SetViewController.h"
+#import "ViewController.h"
 
 @implementation UIWindow (Set)
 
@@ -60,6 +61,14 @@
      }];
     
     [APPDELEGATE.window setRootViewController:drawerController];
+}
+
++ (void)SignOut
+{
+    ViewController *vc = [[ViewController alloc] initWithNibName:nil bundle:nil];
+    UINavigationController * navigationController = [[BaseNavigationController alloc] initWithRootViewController:vc];
+    
+    [APPDELEGATE.window setRootViewController:navigationController];
 }
 
 @end

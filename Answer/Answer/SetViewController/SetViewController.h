@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Liuxiaoguang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
 @interface SetViewController : BaseViewController

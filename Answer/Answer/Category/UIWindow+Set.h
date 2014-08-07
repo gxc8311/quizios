@@ -12,4 +12,6 @@
 
 + (void)setRootViewController;
 
++ (void)SignOut;
+
 @end

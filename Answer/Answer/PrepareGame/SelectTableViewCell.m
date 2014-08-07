@@ -127,7 +127,7 @@ typedef NS_ENUM (NSInteger, ASBtnType){
     __weak DetailView *dView = NULL;
     if (!self.detailView) {
         dView = self.detailView = [[DetailView alloc] initWithFrame:CGRectMake(self.bgView.left + 10, 55, self.bgView.width - 10 * 2, 105)];
-        [self insertSubview:dView belowSubview:self.bgView];
+        [self.contentView insertSubview:dView belowSubview:self.bgView];
     }
     else
         dView = self.detailView;
@@ -182,7 +182,6 @@ typedef NS_ENUM (NSInteger, ASBtnType){
         [self processDelegate];
     }
     else if (!self.detailView && !self.status) {
-//        self.hidden = true;
         [self showDetailView:true];
         [self.arrowButton setImage:IMGAE_NAME(ARROW_TOP) forState:UIControlStateNormal];
         [self processDelegate];

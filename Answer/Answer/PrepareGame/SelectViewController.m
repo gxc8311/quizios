@@ -31,6 +31,11 @@ UITableViewDelegate
 
 @implementation SelectViewController
 
+- (void)dealloc
+{
+    
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -130,15 +135,16 @@ UITableViewDelegate
         [cell.bgView.layer setCornerRadius:8];
 
         __weak typeof(self) mySelf = self;
+        __weak UITableView *myTableView = tableView;
         
         cell.clickDelegate = ^{
             
-            NSIndexPath *indexPath = [tableView indexPathForCell:cell];
+            NSIndexPath *indexPath = [myTableView indexPathForCell:cell];
             [mySelf.statusArray removeObjectAtIndex:indexPath.row];
             [mySelf.statusArray insertObject:[NSNumber numberWithBool:true] atIndex:indexPath.row];
 
             if (mySelf.aniCell) {
-                NSIndexPath *indexPath = [tableView indexPathForCell:mySelf.aniCell];
+                NSIndexPath *indexPath = [myTableView indexPathForCell:mySelf.aniCell];
                 [mySelf.statusArray removeObjectAtIndex:indexPath.row];
                 [mySelf.statusArray insertObject:[NSNumber numberWithBool:false] atIndex:indexPath.row];
                 if (mySelf.aniCell != cell) {
@@ -152,7 +158,7 @@ UITableViewDelegate
                 mySelf.aniCell = cell;
             }
             
-            [tableView reloadRowsAtIndexPaths:nil withRowAnimation:UITableViewRowAnimationNone];
+            [myTableView reloadRowsAtIndexPaths:nil withRowAnimation:UITableViewRowAnimationNone];
         };
     }
     
