@@ -1,24 +1,24 @@
 //
-//  BaseViewController.m
+//  SetViewController.m
 //  Answer
 //
-//  Created by YuJie on 8/1/14.
+//  Created by YuJie on 8/7/14.
 //  Copyright (c) 2014 Liuxiaoguang. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "SetViewController.h"
 
-@interface BaseViewController ()
+@interface SetViewController ()
 
 @end
 
-@implementation BaseViewController
+@implementation SetViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+        self.title = @"设置 功能没做";
         // Custom initialization
     }
     return self;
@@ -27,8 +27,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    self.view.backgroundColor = VC_BG_COLOR;
     // Do any additional setup after loading the view.
 }
 

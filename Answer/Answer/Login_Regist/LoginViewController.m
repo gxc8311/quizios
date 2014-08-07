@@ -8,7 +8,7 @@
 
 #import "LoginViewController.h"
 #import "MatchViewController.h"
-#import "SelectViewController.h"
+#import "UIWindow+Set.h"
 
 @interface LoginViewController ()
 
@@ -60,12 +60,7 @@
 - (void)doneClick
 {
     if ([self checkContexts]) {
-        
-        
-        SelectViewController *regVC = [[SelectViewController alloc] initWithNibName:nil
-                                                                                 bundle:nil];
-        [self.navigationController pushViewController:regVC animated:YES];
-    
+        [UIWindow setRootViewController];
     }
 }
 

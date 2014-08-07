@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Liuxiaoguang. All rights reserved.
 //
 
+#define APPDELEGATE ((AppDelegate *)[UIApplication sharedApplication].delegate)
+
 //系统信息
 #define SYSTEM_VERSION [[UIDevice currentDevice].systemVersion floatValue]
 #define IS_SYSTEM_VERSION_7_GREATER (SYSTEM_VERSION >= 7.0 ? YES : NO)

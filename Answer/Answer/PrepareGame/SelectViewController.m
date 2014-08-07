@@ -10,6 +10,8 @@
 #import "MatchViewController.h"
 #import "PKViewController.h"
 #import "SelectTableViewCell.h"
+#import "ExchangeViewController.h"
+#import "UIViewController+MMDrawerController.h"
 
 #define Rows 3
 
@@ -77,12 +79,13 @@ UITableViewDelegate
 
 - (void)leftNavBtnAction
 {
-    
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
 }
 
 - (void)rightNavBtnAction
 {
-    
+    ExchangeViewController *vc = [[ExchangeViewController alloc] initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (UIBarButtonItem *)setNavBtnWithName:(NSString *)name selecter:(SEL)sel

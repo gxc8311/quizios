@@ -27,6 +27,20 @@
 		274E8CBC1984A91A00A1095A /* QuestionOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E8CBA1984A91A00A1095A /* QuestionOne.m */; };
 		274E8CBD1984A91A00A1095A /* QuestionOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 274E8CBB1984A91A00A1095A /* QuestionOne.xib */; };
 		E22E4F6E1983AF4800B94C57 /* UIAlertView+Tip.m in Sources */ = {isa = PBXBuildFile; fileRef = E22E4F6D1983AF4800B94C57 /* UIAlertView+Tip.m */; };
+		FA0F0A74199311FF00F8A510 /* ExchangeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0F0A72199311FF00F8A510 /* ExchangeCell.m */; };
+		FA0F0A75199311FF00F8A510 /* ExchangeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0F0A73199311FF00F8A510 /* ExchangeCell.xib */; };
+		FA0F0A791993139D00F8A510 /* reward_enterinto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0F0A761993139D00F8A510 /* reward_enterinto@2x.png */; };
+		FA0F0A7A1993139D00F8A510 /* reward_jindong_50yuan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0F0A771993139D00F8A510 /* reward_jindong_50yuan@2x.png */; };
+		FA0F0A7B1993139D00F8A510 /* reward_xunlei_month@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0F0A781993139D00F8A510 /* reward_xunlei_month@2x.png */; };
+		FA0F0A7E1993148100F8A510 /* ExchangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0F0A7D1993148100F8A510 /* ExchangeViewController.m */; };
+		FA0F0AEC1993534300F8A510 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0F0AE21993534300F8A510 /* MMDrawerController.m */; };
+		FA0F0AED1993534300F8A510 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0F0AE51993534300F8A510 /* UIViewController+MMDrawerController.m */; };
+		FA0F0AEE1993534300F8A510 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0F0AE71993534300F8A510 /* MMDrawerBarButtonItem.m */; };
+		FA0F0AEF1993534300F8A510 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0F0AE91993534300F8A510 /* MMDrawerVisualState.m */; };
+		FA0F0AF01993534300F8A510 /* MMExampleDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0F0AEB1993534300F8A510 /* MMExampleDrawerVisualStateManager.m */; };
+		FA0F0AF61993549500F8A510 /* UIWindow+Set.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0F0AF51993549500F8A510 /* UIWindow+Set.m */; };
+		FA0F0AFA199359E700F8A510 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0F0AF9199359E700F8A510 /* BaseNavigationController.m */; };
+		FA0F0AFE19935AD500F8A510 /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0F0AFD19935AD500F8A510 /* SetViewController.m */; };
 		FA3C644A1991CB9700DA3744 /* home_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3C64481991CB9700DA3744 /* home_close@2x.png */; };
 		FA3C644B1991CB9700DA3744 /* home_open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3C64491991CB9700DA3744 /* home_open@2x.png */; };
 		FA3C6452199227A300DA3744 /* home_rank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3C6451199227A300DA3744 /* home_rank@2x.png */; };
@@ -136,6 +150,31 @@
 		274E8CBB1984A91A00A1095A /* QuestionOne.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionOne.xib; sourceTree = "<group>"; };
 		E22E4F6C1983AF4800B94C57 /* UIAlertView+Tip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Tip.h"; sourceTree = "<group>"; };
 		E22E4F6D1983AF4800B94C57 /* UIAlertView+Tip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Tip.m"; sourceTree = "<group>"; };
+		FA0F0A71199311FF00F8A510 /* ExchangeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExchangeCell.h; sourceTree = "<group>"; };
+		FA0F0A72199311FF00F8A510 /* ExchangeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExchangeCell.m; sourceTree = "<group>"; };
+		FA0F0A73199311FF00F8A510 /* ExchangeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExchangeCell.xib; sourceTree = "<group>"; };
+		FA0F0A761993139D00F8A510 /* reward_enterinto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reward_enterinto@2x.png"; sourceTree = "<group>"; };
+		FA0F0A771993139D00F8A510 /* reward_jindong_50yuan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reward_jindong_50yuan@2x.png"; sourceTree = "<group>"; };
+		FA0F0A781993139D00F8A510 /* reward_xunlei_month@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reward_xunlei_month@2x.png"; sourceTree = "<group>"; };
+		FA0F0A7C1993148100F8A510 /* ExchangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExchangeViewController.h; sourceTree = "<group>"; };
+		FA0F0A7D1993148100F8A510 /* ExchangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExchangeViewController.m; sourceTree = "<group>"; };
+		FA0F0AE11993534300F8A510 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		FA0F0AE21993534300F8A510 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		FA0F0AE31993534300F8A510 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		FA0F0AE41993534300F8A510 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		FA0F0AE51993534300F8A510 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		FA0F0AE61993534300F8A510 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		FA0F0AE71993534300F8A510 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		FA0F0AE81993534300F8A510 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		FA0F0AE91993534300F8A510 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		FA0F0AEA1993534300F8A510 /* MMExampleDrawerVisualStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExampleDrawerVisualStateManager.h; sourceTree = "<group>"; };
+		FA0F0AEB1993534300F8A510 /* MMExampleDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExampleDrawerVisualStateManager.m; sourceTree = "<group>"; };
+		FA0F0AF41993549500F8A510 /* UIWindow+Set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Set.h"; sourceTree = "<group>"; };
+		FA0F0AF51993549500F8A510 /* UIWindow+Set.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Set.m"; sourceTree = "<group>"; };
+		FA0F0AF8199359E700F8A510 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		FA0F0AF9199359E700F8A510 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		FA0F0AFC19935AD500F8A510 /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
+		FA0F0AFD19935AD500F8A510 /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
 		FA3C64481991CB9700DA3744 /* home_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_close@2x.png"; sourceTree = "<group>"; };
 		FA3C64491991CB9700DA3744 /* home_open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_open@2x.png"; sourceTree = "<group>"; };
 		FA3C6451199227A300DA3744 /* home_rank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_rank@2x.png"; sourceTree = "<group>"; };
@@ -295,6 +334,54 @@
 			path = PrepareGame;
 			sourceTree = "<group>";
 		};
+		FA0F0A70199311E200F8A510 /* Exchange */ = {
+			isa = PBXGroup;
+			children = (
+				FA0F0A7C1993148100F8A510 /* ExchangeViewController.h */,
+				FA0F0A7D1993148100F8A510 /* ExchangeViewController.m */,
+				FA0F0A71199311FF00F8A510 /* ExchangeCell.h */,
+				FA0F0A72199311FF00F8A510 /* ExchangeCell.m */,
+				FA0F0A73199311FF00F8A510 /* ExchangeCell.xib */,
+			);
+			path = Exchange;
+			sourceTree = "<group>";
+		};
+		FA0F0AE01993532C00F8A510 /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				FA0F0AE11993534300F8A510 /* MMDrawerController.h */,
+				FA0F0AE21993534300F8A510 /* MMDrawerController.m */,
+				FA0F0AE31993534300F8A510 /* MMDrawerController+Subclass.h */,
+				FA0F0AE41993534300F8A510 /* UIViewController+MMDrawerController.h */,
+				FA0F0AE51993534300F8A510 /* UIViewController+MMDrawerController.m */,
+				FA0F0AE61993534300F8A510 /* MMDrawerBarButtonItem.h */,
+				FA0F0AE71993534300F8A510 /* MMDrawerBarButtonItem.m */,
+				FA0F0AE81993534300F8A510 /* MMDrawerVisualState.h */,
+				FA0F0AE91993534300F8A510 /* MMDrawerVisualState.m */,
+				FA0F0AEA1993534300F8A510 /* MMExampleDrawerVisualStateManager.h */,
+				FA0F0AEB1993534300F8A510 /* MMExampleDrawerVisualStateManager.m */,
+			);
+			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		FA0F0AF71993596C00F8A510 /* NavBaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA0F0AF8199359E700F8A510 /* BaseNavigationController.h */,
+				FA0F0AF9199359E700F8A510 /* BaseNavigationController.m */,
+			);
+			path = NavBaseViewController;
+			sourceTree = "<group>";
+		};
+		FA0F0AFB19935AA200F8A510 /* SetViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA0F0AFC19935AD500F8A510 /* SetViewController.h */,
+				FA0F0AFD19935AD500F8A510 /* SetViewController.m */,
+			);
+			path = SetViewController;
+			sourceTree = "<group>";
+		};
 		FA65A59E198B37E500CB48FC /* BaseVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +424,9 @@
 		FAB19112197CBB42005338B8 /* Answer */ = {
 			isa = PBXGroup;
 			children = (
+				FA0F0AFB19935AA200F8A510 /* SetViewController */,
+				FA0F0AF71993596C00F8A510 /* NavBaseViewController */,
+				FA0F0A70199311E200F8A510 /* Exchange */,
 				FA65A59E198B37E500CB48FC /* BaseVC */,
 				E22E4F6B19839E7B00B94C57 /* PrepareGame */,
 				E22E4F6A19839E1100B94C57 /* Matching */,
@@ -409,6 +499,9 @@
 		FAB19141197CBC09005338B8 /* IMAGE */ = {
 			isa = PBXGroup;
 			children = (
+				FA0F0A761993139D00F8A510 /* reward_enterinto@2x.png */,
+				FA0F0A771993139D00F8A510 /* reward_jindong_50yuan@2x.png */,
+				FA0F0A781993139D00F8A510 /* reward_xunlei_month@2x.png */,
 				FA3C64591992301E00DA3744 /* home_menu@2x.png */,
 				FA3C645A1992301E00DA3744 /* home_reward@2x.png */,
 				FA3C645319922E7600DA3744 /* home_begin@2x.png */,
@@ -447,6 +540,7 @@
 		FAB1914A197CBEEF005338B8 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				FA0F0AE01993532C00F8A510 /* MMDrawerController */,
 				274E8CB01984A8D900A1095A /* AMProgressView.h */,
 				274E8CB11984A8D900A1095A /* AMProgressView.m */,
 				274E8CB21984A8D900A1095A /* AMProgressViewGradient.h */,
@@ -464,6 +558,8 @@
 				FAB19151197CC18F005338B8 /* UIView+Label.m */,
 				E22E4F6C1983AF4800B94C57 /* UIAlertView+Tip.h */,
 				E22E4F6D1983AF4800B94C57 /* UIAlertView+Tip.m */,
+				FA0F0AF41993549500F8A510 /* UIWindow+Set.h */,
+				FA0F0AF51993549500F8A510 /* UIWindow+Set.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -548,7 +644,9 @@
 				FAB19182197CF954005338B8 /* Icon-Small-50.png in Resources */,
 				FAB191AF197D1693005338B8 /* cat-large@2x.png in Resources */,
 				FAB1917C197CF94B005338B8 /* Icon.png in Resources */,
+				FA0F0A75199311FF00F8A510 /* ExchangeCell.xib in Resources */,
 				FABB776B198B1EBF00FEF5A3 /* reg_head@2x.png in Resources */,
+				FA0F0A7B1993139D00F8A510 /* reward_xunlei_month@2x.png in Resources */,
 				FAB19183197CF954005338B8 /* Icon-Small-50@2x.png in Resources */,
 				FAB1917D197CF94B005338B8 /* Icon@2x.png in Resources */,
 				FAB19177197CF904005338B8 /* Icon-72@2x.png in Resources */,
@@ -564,6 +662,7 @@
 				FABB776A198B1EBF00FEF5A3 /* login_name@2x.png in Resources */,
 				FAB19192197CF9A1005338B8 /* Default.png in Resources */,
 				FAB19188197CF95D005338B8 /* iTunesArtwork.png in Resources */,
+				FA0F0A7A1993139D00F8A510 /* reward_jindong_50yuan@2x.png in Resources */,
 				FAB19117197CBB42005338B8 /* InfoPlist.strings in Resources */,
 				FA3C644A1991CB9700DA3744 /* home_close@2x.png in Resources */,
 				FAB19174197CF904005338B8 /* Icon-60.png in Resources */,
@@ -576,6 +675,7 @@
 				FAB191B4197D1693005338B8 /* owl-large@2x.png in Resources */,
 				274E8C9A1984A7F400A1095A /* RegistViewController.xib in Resources */,
 				FA3C645B1992301E00DA3744 /* home_menu@2x.png in Resources */,
+				FA0F0A791993139D00F8A510 /* reward_enterinto@2x.png in Resources */,
 				FAB191B6197D1693005338B8 /* pig-large@2x.png in Resources */,
 				FAB19120197CBB42005338B8 /* Main.storyboard in Resources */,
 				FAB191B5197D1693005338B8 /* panda-large@2x.png in Resources */,
@@ -618,24 +718,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB19152197CC18F005338B8 /* UIView+Label.m in Sources */,
+				FA0F0AEE1993534300F8A510 /* MMDrawerBarButtonItem.m in Sources */,
 				FA65A5A1198B380A00CB48FC /* BaseViewController.m in Sources */,
+				FA0F0AFE19935AD500F8A510 /* SetViewController.m in Sources */,
 				FAB1911D197CBB42005338B8 /* AppDelegate.m in Sources */,
 				274E8C971984A7F400A1095A /* LoginViewController.m in Sources */,
 				274E8CBC1984A91A00A1095A /* QuestionOne.m in Sources */,
 				274E8CA41984A84000A1095A /* CandidateView.m in Sources */,
 				E22E4F6E1983AF4800B94C57 /* UIAlertView+Tip.m in Sources */,
+				FA0F0AFA199359E700F8A510 /* BaseNavigationController.m in Sources */,
+				FA0F0AF61993549500F8A510 /* UIWindow+Set.m in Sources */,
 				274E8C961984A7F400A1095A /* LoginCustionBtn.m in Sources */,
+				FA0F0A74199311FF00F8A510 /* ExchangeCell.m in Sources */,
 				FAB19119197CBB42005338B8 /* main.m in Sources */,
+				FA0F0A7E1993148100F8A510 /* ExchangeViewController.m in Sources */,
 				274E8CB61984A8D900A1095A /* AMProgressView.m in Sources */,
 				274E8CAC1984A87700A1095A /* PKViewController.m in Sources */,
 				274E8CAE1984A87700A1095A /* QuestionView.m in Sources */,
+				FA0F0AEC1993534300F8A510 /* MMDrawerController.m in Sources */,
 				274E8CA51984A84000A1095A /* MatchViewController.m in Sources */,
 				274E8C8D1984A79D00A1095A /* ViewController.m in Sources */,
+				FA0F0AED1993534300F8A510 /* UIViewController+MMDrawerController.m in Sources */,
 				274E8C991984A7F400A1095A /* RegistViewController.m in Sources */,
+				FA0F0AEF1993534300F8A510 /* MMDrawerVisualState.m in Sources */,
 				274E8C9E1984A82400A1095A /* SelectViewController.m in Sources */,
 				274E8CB71984A8D900A1095A /* AMProgressViewGradient.m in Sources */,
 				274E8CB81984A8D900A1095A /* UIViewExt.m in Sources */,
 				FA91FE991991C823007848C6 /* SelectTableViewCell.m in Sources */,
+				FA0F0AF01993534300F8A510 /* MMExampleDrawerVisualStateManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
