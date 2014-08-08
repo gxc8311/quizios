@@ -67,7 +67,7 @@
     }
 }
 
-- (void)changeBtnColor:(BOOL)value andTag:(int)tag
+- (void)changeBtnColor:(BOOL)value andTag:(NSInteger)tag
 {
     UIButton *btn = (UIButton *)[self viewWithTag:tag];
     if (value)

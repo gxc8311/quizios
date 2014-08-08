@@ -12,6 +12,8 @@
 
 @property (nonatomic, copy) void (^clickDelegate)();
 
+@property (nonatomic, copy) void (^startGameDelegate)(NSInteger tag);
+
 @property (nonatomic, retain) IBOutlet UIView *bgView;
 
 - (void)showDetailView:(BOOL)value;

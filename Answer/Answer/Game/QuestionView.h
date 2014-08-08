@@ -10,9 +10,9 @@
 
 @interface QuestionView : UIView
 
-@property (nonatomic, copy) void (^clickDelegate)(int tag);
+@property (nonatomic, copy) void (^clickDelegate)(NSInteger tag);
 
-- (void)changeBtnColor:(BOOL)value andTag:(int)tag;
+- (void)changeBtnColor:(BOOL)value andTag:(NSInteger)tag;
 - (void)recoverView;
 - (void)layoutView;
 - (void)initData:(NSDictionary *)dic;

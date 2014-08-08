@@ -160,7 +160,7 @@ UIAlertViewDelegate
         __weak typeof(self) mySelf = self;
         
         questView = [[[UINib nibWithNibName:@"QuestionView" bundle:nil] instantiateWithOwner:nil options:nil] lastObject];
-        questView.clickDelegate = ^(int tag){
+        questView.clickDelegate = ^(NSInteger tag){
             [mySelf processSelectResult:tag];
         };
         [questView layoutView];
@@ -204,7 +204,7 @@ UIAlertViewDelegate
     view.layer.masksToBounds = YES;
 }
 
-- (void)processSelectResult:(int)tag
+- (void)processSelectResult:(NSInteger)tag
 {
     QuestionView *questView = (QuestionView *)[self.view viewWithTag:ANSWER_TAG];
     if ([[[self.answerArray objectAtIndex:topicNum] objectForKey:@"index"] intValue] == tag - 100) {

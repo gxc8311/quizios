@@ -25,8 +25,6 @@ UITableViewDelegate
 @property (nonatomic, retain) UITableView *m_tableView;
 @property (nonatomic, retain) SelectTableViewCell *aniCell;
 
-- (IBAction)enterGame;
-
 @end
 
 @implementation SelectViewController
@@ -62,7 +60,7 @@ UITableViewDelegate
 {
     [super viewDidLoad];
     
-    self.m_tableView=[[UITableView alloc] initWithFrame:CGRectMake(0, kX, kScreenWidth, kSurplusHeight) style:UITableViewStylePlain];
+    self.m_tableView=[[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStylePlain];
     self.m_tableView.delegate=self;
     self.m_tableView.dataSource=self;
     self.m_tableView.separatorStyle = NO;
@@ -137,6 +135,12 @@ UITableViewDelegate
         __weak typeof(self) mySelf = self;
         __weak UITableView *myTableView = tableView;
         
+        //cell展开以后 4个按钮的事件
+        cell.startGameDelegate = ^(NSInteger tag){
+            [mySelf enterGame];
+        };
+        
+        //cell展开动画的逻辑操作
         cell.clickDelegate = ^{
             
             NSIndexPath *indexPath = [myTableView indexPathForCell:cell];
@@ -185,7 +189,7 @@ UITableViewDelegate
     return view;
 }
 
-- (IBAction)enterGame
+- (void)enterGame
 {
     MatchViewController *regVC = [[MatchViewController alloc] initWithNibName:nil
                                                                              bundle:nil];

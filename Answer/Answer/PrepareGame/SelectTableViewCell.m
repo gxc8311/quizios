@@ -20,6 +20,7 @@ typedef NS_ENUM (NSInteger, ASBtnType){
 @interface DetailView : UIView
 
 @property (nonatomic, retain) UIView *bgView;
+@property (nonatomic, copy) void (^btnClickAction)(NSInteger tag);
 
 @end
 
@@ -83,8 +84,9 @@ typedef NS_ENUM (NSInteger, ASBtnType){
     btn.backgroundColor = [UIColor whiteColor];
     [btn setTitle:title forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
+    [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
     btn.frame = frame;
+    btn.tag = _type;
     [btn.layer setCornerRadius:10];
     [self.bgView addSubview:btn];
     
@@ -95,9 +97,11 @@ typedef NS_ENUM (NSInteger, ASBtnType){
     [btn addSubview:imageView];
 }
 
-- (void)btnAction
+- (void)btnAction:(UIButton *)btn
 {
-    
+    if (self.btnClickAction) {
+        self.btnClickAction(btn.tag);
+    }
 }
 
 @end
@@ -123,10 +127,15 @@ typedef NS_ENUM (NSInteger, ASBtnType){
 
 - (void)showDetailView:(BOOL)value
 {
-    
+    __weak typeof(self) mySelf = self;
     __weak DetailView *dView = NULL;
     if (!self.detailView) {
         dView = self.detailView = [[DetailView alloc] initWithFrame:CGRectMake(self.bgView.left + 10, 55, self.bgView.width - 10 * 2, 105)];
+        self.detailView.btnClickAction = ^(NSInteger tag){
+            if (mySelf.startGameDelegate) {
+                mySelf.startGameDelegate(tag);
+            }
+        };
         [self.contentView insertSubview:dView belowSubview:self.bgView];
     }
     else
