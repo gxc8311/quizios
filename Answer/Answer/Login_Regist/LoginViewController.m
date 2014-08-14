@@ -12,11 +12,7 @@
 
 @interface LoginViewController ()
 
-@property (nonatomic, retain) IBOutlet UILabel *tipLabel;
-
-@property (nonatomic, retain) IBOutlet UILabel *twoFlag;
-@property (nonatomic, retain) IBOutlet UILabel *threeFlag;
-
+@property (nonatomic, retain) IBOutlet UIView *bgView;
 @property (nonatomic, retain) IBOutlet UITextField *emailTF;
 @property (nonatomic, retain) IBOutlet UITextField *passwordTF;
 
@@ -31,7 +27,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"Login";
+        self.title = @"登录";
         // Custom initialization
     }
     return self;
@@ -42,55 +38,35 @@
     [super viewWillAppear:animated];
     
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    
+    [self.emailTF becomeFirstResponder];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    [self.bgView.layer setCornerRadius:5.0f];
+    
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
                                                                                target:self
                                                                                action:@selector(doneClick)];
-    
+    rightItem.tintColor = [UIColor whiteColor];
     self.navigationItem.rightBarButtonItem = rightItem;
     
+    
+    self.navigationItem.leftBarButtonItem.tintColor = [UIColor whiteColor];
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)doneClick
 {
-    if ([self checkContexts]) {
-        [UIWindow setRootViewController];
-    }
-}
-
-- (BOOL)checkContexts
-{
-    BOOL flag = false;
-    
-    if ([self.emailTF.text length] == 0){
-        flag = true;
-        self.twoFlag.textColor = [UIColor redColor];
-    }else
-        self.twoFlag.textColor = [UIColor greenColor];
-    
-    if ([self.passwordTF.text length] == 0){
-        flag = true;
-        self.threeFlag.textColor = [UIColor redColor];
-    }else
-        self.threeFlag.textColor = [UIColor greenColor];
-    
-    if (flag) {
-        [self.tipLabel setText:@"Input content cannot be empty"];
-        return false;
-    }
-    
-    return true;
+    [UIWindow setRootViewController];
 }
 
 - (IBAction)forgotPassword:(id)sender
 {
-    [self.tipLabel setText:@"Function is not implemented！"];
+
 }
 
 - (IBAction)clearKeyboard:(id)sender

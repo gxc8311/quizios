@@ -29,6 +29,8 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = VC_BG_COLOR;
+    
+    
     // Do any additional setup after loading the view.
 }
 
