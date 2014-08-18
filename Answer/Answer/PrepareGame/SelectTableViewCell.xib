@@ -28,8 +28,8 @@
                                     <action selector="arrowClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WQ9-Tg-OSf"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vpe-00-umA">
-                                <rect key="frame" x="5" y="5" width="50" height="50"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home-IQtest-logo1.png" translatesAutoresizingMaskIntoConstraints="NO" id="vpe-00-umA">
+                                <rect key="frame" x="20" y="17" width="22" height="26"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="决战猫星" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzI-S9-DvB">
@@ -65,6 +65,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="home-IQtest-logo1.png" width="22" height="26"/>
         <image name="home_close.png" width="14" height="8"/>
     </resources>
 </document>

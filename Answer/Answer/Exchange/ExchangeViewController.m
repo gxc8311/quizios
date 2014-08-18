@@ -8,6 +8,7 @@
 
 #import "ExchangeViewController.h"
 #import "ExchangeCell.h"
+#import "UIColor+Hex.h"
 
 #define Rows 3
 
@@ -19,6 +20,8 @@ UITableViewDelegate
 
 @property (nonatomic, retain) UITableView *m_tableView;
 
+@property (nonatomic, retain) NSMutableArray *data;
+
 @end
 
 @implementation ExchangeViewController
@@ -28,6 +31,15 @@ UITableViewDelegate
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = @"兑换";
+        
+        self.data = [[NSMutableArray alloc] init];
+        
+        NSDictionary *dic = [[NSDictionary alloc] initWithObjectsAndKeys:@"section", @"移动影音", @"bgColor", @"0x0000ff", @"content", @[@{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}], nil];
+        
+        NSDictionary *dic1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"section", @"美妆护肤", @"bgColor", @"0xff0000", @"content", @[@{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}], nil];
+        
+        [self.data addObject:dic];
+        [self.data addObject:dic1];
         // Custom initialization
     }
     return self;
@@ -51,12 +63,15 @@ UITableViewDelegate
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    
+    return self.data.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return Rows;
+    int aaaa = [[[self.data objectAtIndex:section] objectForKey:@"content"] count] / 4;
+    NSLog(@"%d", aaaa);
+    return aaaa;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -68,7 +83,19 @@ UITableViewDelegate
     
     if (cell == nil)
     {
-        cell = [[[NSBundle mainBundle]loadNibNamed:@"ExchangeCell" owner:nil options:nil] lastObject];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"ExchangeCell" owner:nil options:nil] lastObject];
+    }
+    
+    NSArray *arr = [[self.data objectAtIndex:indexPath.section] objectForKey:@"content"];
+    
+    int index = 0;
+    
+    for (int i = indexPath.row * 4; i < indexPath.row * 4 + 4; i++) {
+        if (i < arr.count - 1) {
+            UILabel *label = (UILabel *)[cell.contentView viewWithTag:1001 + index];
+            label.text = [[arr objectAtIndex:i] objectForKey:@"name"];
+            index ++;
+        }
     }
     
     return cell;
@@ -76,11 +103,22 @@ UITableViewDelegate
 
 #pragma mark -- UITableViewDelegate
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    return 95;
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 33)];
+    view.backgroundColor = [UIColor colorWithHexString:[[self.data objectAtIndex:section] objectForKey:@"bgColor"]];
+    return view;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 100;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 33;
+}
 
 - (void)didReceiveMemoryWarning
 {

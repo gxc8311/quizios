@@ -10,4 +10,14 @@
 
 @interface ExchangeCell : UITableViewCell
 
+@property (nonatomic, retain) IBOutlet UIImageView *imgView1;
+@property (nonatomic, retain) IBOutlet UIImageView *imgView2;
+@property (nonatomic, retain) IBOutlet UIImageView *imgView3;
+@property (nonatomic, retain) IBOutlet UIImageView *imgView4;
+
+@property (nonatomic, retain) IBOutlet UILabel *label1;
+@property (nonatomic, retain) IBOutlet UILabel *label2;
+@property (nonatomic, retain) IBOutlet UILabel *label3;
+@property (nonatomic, retain) IBOutlet UILabel *label4;
+
 @end

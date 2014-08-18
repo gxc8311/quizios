@@ -54,6 +54,7 @@
 #define START_IMAGE     @"home_begin@2x"
 #define CHALLENGE_IMAGE     @"home_begin@2x"
 #define DISSCUSION_IMAGE    @"home_discuss@2x"
+#define SELECT_ANSWER_ICON @"home-IQtest-logo1@2x"
 
 //创建UIIMAGE
 

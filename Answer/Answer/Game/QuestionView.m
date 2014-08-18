@@ -62,6 +62,7 @@
 
 - (IBAction)selectAnswer:(UIButton *)sender
 {
+    self.userInteractionEnabled = false;
     if (self.clickDelegate) {
         self.clickDelegate(sender.tag);
     }

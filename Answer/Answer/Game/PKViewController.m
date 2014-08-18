@@ -225,6 +225,7 @@ UIAlertViewDelegate
 - (void)goOnGame
 {
     QuestionView *questView = (QuestionView *)[self.view viewWithTag:ANSWER_TAG];
+    questView.userInteractionEnabled = true;
     if (questView) {
         [questView recoverView];
     }

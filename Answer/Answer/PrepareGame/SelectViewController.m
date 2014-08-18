@@ -66,7 +66,7 @@ UITableViewDelegate
     self.m_tableView.separatorStyle = NO;
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 45)];
-    label.text = @"游戏";
+    label.text = @"智力测试";
     label.textAlignment = NSTextAlignmentCenter;
     label.backgroundColor = [UIColor clearColor];
     

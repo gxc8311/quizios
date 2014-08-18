@@ -8,6 +8,10 @@
 
 #import "ExchangeCell.h"
 
+@interface ExchangeCell ()
+
+@end
+
 @implementation ExchangeCell
 
 - (void)awakeFromNib

@@ -42,6 +42,8 @@
 		FA0F0AFA199359E700F8A510 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0F0AF9199359E700F8A510 /* BaseNavigationController.m */; };
 		FA0F0B03199367E800F8A510 /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0F0B01199367E800F8A510 /* SetViewController.m */; };
 		FA0F0B04199367E800F8A510 /* SetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0F0B02199367E800F8A510 /* SetViewController.xib */; };
+		FA39F1E3199F2A590045168C /* home-IQtest-logo1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA39F1E2199F2A590045168C /* home-IQtest-logo1@2x.png */; };
+		FA39F1E6199F2FB00045168C /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = FA39F1E5199F2FB00045168C /* UIColor+Hex.m */; };
 		FA3C644A1991CB9700DA3744 /* home_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3C64481991CB9700DA3744 /* home_close@2x.png */; };
 		FA3C644B1991CB9700DA3744 /* home_open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3C64491991CB9700DA3744 /* home_open@2x.png */; };
 		FA3C6452199227A300DA3744 /* home_rank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3C6451199227A300DA3744 /* home_rank@2x.png */; };
@@ -177,6 +179,9 @@
 		FA0F0B00199367E800F8A510 /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
 		FA0F0B01199367E800F8A510 /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
 		FA0F0B02199367E800F8A510 /* SetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetViewController.xib; sourceTree = "<group>"; };
+		FA39F1E2199F2A590045168C /* home-IQtest-logo1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-IQtest-logo1@2x.png"; sourceTree = "<group>"; };
+		FA39F1E4199F2FB00045168C /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		FA39F1E5199F2FB00045168C /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		FA3C64481991CB9700DA3744 /* home_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_close@2x.png"; sourceTree = "<group>"; };
 		FA3C64491991CB9700DA3744 /* home_open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_open@2x.png"; sourceTree = "<group>"; };
 		FA3C6451199227A300DA3744 /* home_rank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_rank@2x.png"; sourceTree = "<group>"; };
@@ -502,6 +507,7 @@
 		FAB19141197CBC09005338B8 /* IMAGE */ = {
 			isa = PBXGroup;
 			children = (
+				FA39F1E2199F2A590045168C /* home-IQtest-logo1@2x.png */,
 				FA0F0A761993139D00F8A510 /* reward_enterinto@2x.png */,
 				FA0F0A771993139D00F8A510 /* reward_jindong_50yuan@2x.png */,
 				FA0F0A781993139D00F8A510 /* reward_xunlei_month@2x.png */,
@@ -563,6 +569,8 @@
 				E22E4F6D1983AF4800B94C57 /* UIAlertView+Tip.m */,
 				FA0F0AF41993549500F8A510 /* UIWindow+Set.h */,
 				FA0F0AF51993549500F8A510 /* UIWindow+Set.m */,
+				FA39F1E4199F2FB00045168C /* UIColor+Hex.h */,
+				FA39F1E5199F2FB00045168C /* UIColor+Hex.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -688,6 +696,7 @@
 				FA3C6452199227A300DA3744 /* home_rank@2x.png in Resources */,
 				FAB19189197CF95D005338B8 /* iTunesArtwork@2x.png in Resources */,
 				FAB19173197CF904005338B8 /* Icon-40@2x.png in Resources */,
+				FA39F1E3199F2A590045168C /* home-IQtest-logo1@2x.png in Resources */,
 				FAB19179197CF904005338B8 /* Icon-76@2x.png in Resources */,
 				FA91FE9A1991C823007848C6 /* SelectTableViewCell.xib in Resources */,
 				FA3C644B1991CB9700DA3744 /* home_open@2x.png in Resources */,
@@ -722,6 +731,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB19152197CC18F005338B8 /* UIView+Label.m in Sources */,
+				FA39F1E6199F2FB00045168C /* UIColor+Hex.m in Sources */,
 				FA0F0AEE1993534300F8A510 /* MMDrawerBarButtonItem.m in Sources */,
 				FA65A5A1198B380A00CB48FC /* BaseViewController.m in Sources */,
 				FA0F0B03199367E800F8A510 /* SetViewController.m in Sources */,
