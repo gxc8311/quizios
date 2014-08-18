@@ -253,9 +253,9 @@ UIAlertViewDelegate
 {
     AMProgressView *pro = [[AMProgressView alloc] initWithFrame:frame
                                               andGradientColors:[NSArray arrayWithObjects:
-                                                                 [UIColor colorWithRed:0.0f green:0.0f blue:0.3f alpha:0.50f],
-                                                                 [UIColor colorWithRed:0.3f green:0.3f blue:0.6f alpha:0.75f],
-                                                                 [UIColor colorWithRed:0.6f green:0.6f blue:0.9f alpha:1.00f], nil]
+                                                                 [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:1.00f],
+                                                                 [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:1.00f],
+                                                                 [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:1.00f], nil]
                                                andOutsideBorder:NO
                                                     andVertical:YES];
     pro.emptyPartAlpha = 0.8f;
@@ -263,6 +263,10 @@ UIAlertViewDelegate
     pro.layer.cornerRadius = pro.frame.size.width / 2;
     pro.layer.masksToBounds = YES;
     [self.view addSubview:pro];
+    
+//    [UIColor colorWithRed:0.0f green:0.0f blue:0.3f alpha:0.50f],
+//    [UIColor colorWithRed:0.3f green:0.3f blue:0.6f alpha:0.75f],
+//    [UIColor colorWithRed:0.6f green:0.6f blue:0.9f alpha:1.00f]
     
     return pro;
 }
