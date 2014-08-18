@@ -34,9 +34,9 @@ UITableViewDelegate
         
         self.data = [[NSMutableArray alloc] init];
         
-        NSDictionary *dic = [[NSDictionary alloc] initWithObjectsAndKeys:@"section", @"移动影音", @"bgColor", @"0x0000ff", @"content", @[@{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}], nil];
+        NSDictionary *dic = @{@"section" : @"移动影音", @"bgColor" : @"0x0000ff", @"content" : @[@{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}]};
         
-        NSDictionary *dic1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"section", @"美妆护肤", @"bgColor", @"0xff0000", @"content", @[@{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}], nil];
+        NSDictionary *dic1 = @{@"section" : @"美妆护肤", @"bgColor" : @"0xff0000", @"content" : @[@{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}, @{@"icon":@"1", @"name":@"移动硬盘"}]};
         
         [self.data addObject:dic];
         [self.data addObject:dic1];
@@ -69,7 +69,10 @@ UITableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    int aaaa = [[[self.data objectAtIndex:section] objectForKey:@"content"] count] / 4;
+    
+    int count = [[[self.data objectAtIndex:section] objectForKey:@"content"] count];
+    
+    int aaaa =  count % 4 == 0 ? count / 4 : count / 4 + 1;
     NSLog(@"%d", aaaa);
     return aaaa;
 }
@@ -79,7 +82,7 @@ UITableViewDelegate
     static NSString *SimpleTableIdentifier = @"SimpleTableIdentifier";
     
     __weak ExchangeCell *cell = [tableView dequeueReusableCellWithIdentifier:
-                                        SimpleTableIdentifier];
+                                 SimpleTableIdentifier];
     
     if (cell == nil)
     {
@@ -107,6 +110,15 @@ UITableViewDelegate
 {
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 33)];
     view.backgroundColor = [UIColor colorWithHexString:[[self.data objectAtIndex:section] objectForKey:@"bgColor"]];
+    
+    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 320, 33)];
+    title.backgroundColor = [UIColor clearColor];
+    title.textColor = [UIColor whiteColor];
+    title.font = [UIFont systemFontOfSize:13];
+    title.numberOfLines = 1;
+    title.text = [[self.data objectAtIndex:section] objectForKey:@"section"];
+    [view addSubview:title];
+    
     return view;
 }
 
@@ -115,7 +127,7 @@ UITableViewDelegate
     return 100;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     return 33;
 }
@@ -127,14 +139,14 @@ UITableViewDelegate
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

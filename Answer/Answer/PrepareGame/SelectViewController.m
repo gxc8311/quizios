@@ -44,7 +44,7 @@ UITableViewDelegate
         for (int i = 0; i < Rows; i++) {
             [self.statusArray addObject:[NSNumber numberWithBool:false]];
         }
-
+        
     }
     return self;
 }
@@ -53,6 +53,7 @@ UITableViewDelegate
 {
     [super viewWillAppear:animated];
     
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
     self.navigationItem.hidesBackButton =YES;
 }
 
@@ -73,7 +74,7 @@ UITableViewDelegate
     self.m_tableView.tableHeaderView = label;
     
     self.m_tableView.backgroundColor = ASColor(248, 178, 23);
-
+    
     [self.view addSubview:self.m_tableView];
     
     self.navigationItem.leftBarButtonItem = [self setNavBtnWithName:SET_BTN selecter:@selector(leftNavBtnAction)];
@@ -123,7 +124,7 @@ UITableViewDelegate
     static NSString *SimpleTableIdentifier = @"SimpleTableIdentifier";
     
     __weak SelectTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:
-                             SimpleTableIdentifier];
+                                        SimpleTableIdentifier];
     
     if (cell == nil)
     {
@@ -131,7 +132,7 @@ UITableViewDelegate
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.backgroundColor = [UIColor clearColor];
         [cell.bgView.layer setCornerRadius:8];
-
+        
         __weak typeof(self) mySelf = self;
         __weak UITableView *myTableView = tableView;
         
@@ -146,7 +147,7 @@ UITableViewDelegate
             NSIndexPath *indexPath = [myTableView indexPathForCell:cell];
             [mySelf.statusArray removeObjectAtIndex:indexPath.row];
             [mySelf.statusArray insertObject:[NSNumber numberWithBool:true] atIndex:indexPath.row];
-
+            
             if (mySelf.aniCell) {
                 NSIndexPath *indexPath = [myTableView indexPathForCell:mySelf.aniCell];
                 [mySelf.statusArray removeObjectAtIndex:indexPath.row];
@@ -192,7 +193,7 @@ UITableViewDelegate
 - (void)enterGame
 {
     MatchViewController *regVC = [[MatchViewController alloc] initWithNibName:nil
-                                                                             bundle:nil];
+                                                                       bundle:nil];
     
     __weak typeof(self) mySelf = self;
     
@@ -207,7 +208,7 @@ UITableViewDelegate
 {
     [self.navigationController setNavigationBarHidden:YES];
     PKViewController *regVC = [[PKViewController alloc] initWithNibName:nil
-                                                                       bundle:nil];
+                                                                 bundle:nil];
     [self.navigationController pushViewController:regVC animated:YES];
 }
 
